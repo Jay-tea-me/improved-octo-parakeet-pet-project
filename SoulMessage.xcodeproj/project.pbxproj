@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068E027B2B8425632FEF55A5 /* Pods_SoulMessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */; };
 		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
 		213DE9BF26946A5700A54262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BE26946A5700A54262 /* ContentView.swift */; };
 		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
 		213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C326946A5800A54262 /* Preview Assets.xcassets */; };
 		213DE9CF26946A5900A54262 /* SoulMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9CE26946A5900A54262 /* SoulMessageTests.swift */; };
 		213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9D926946A5900A54262 /* SoulMessageUITests.swift */; };
+		213DE9E826946E0600A54262 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9E726946E0600A54262 /* GoogleService-Info.plist */; };
+		213DE9EE26946FB200A54262 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9ED26946FB200A54262 /* AuthenticationViewModel.swift */; };
+		213DE9F026946FDA00A54262 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */; };
+		213DE9F22694704100A54262 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F12694704100A54262 /* SignInView.swift */; };
+		213DE9F42694709D00A54262 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F32694709D00A54262 /* ProfileView.swift */; };
+		7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */; };
+		858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage/Pods-SoulMessage.release.xcconfig"; sourceTree = "<group>"; };
+		1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		213DE9B926946A5700A54262 /* SoulMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213DE9BC26946A5700A54262 /* SoulMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageApp.swift; sourceTree = "<group>"; };
 		213DE9BE26946A5700A54262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,18 @@
 		213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		213DE9D926946A5900A54262 /* SoulMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageUITests.swift; sourceTree = "<group>"; };
 		213DE9DB26946A5900A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213DE9E726946E0600A54262 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		213DE9ED26946FB200A54262 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
+		213DE9F12694704100A54262 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		345F8EA19BE7EEC33DAB6B6A /* Pods-SoulMessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessageTests.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessageTests/Pods-SoulMessageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C78016E95E2DC3A29D89206 /* Pods-SoulMessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessageTests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessageTests/Pods-SoulMessageTests.release.xcconfig"; sourceTree = "<group>"; };
+		93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessage/Pods-SoulMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessage_SoulMessageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068E027B2B8425632FEF55A5 /* Pods_SoulMessageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,8 @@
 				213DE9CD26946A5900A54262 /* SoulMessageTests */,
 				213DE9D826946A5900A54262 /* SoulMessageUITests */,
 				213DE9BA26946A5700A54262 /* Products */,
+				35FBB2571F9F070467D02286 /* Pods */,
+				6D7524E8E869FE70CE2BA913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				213DE9BC26946A5700A54262 /* SoulMessageApp.swift */,
-				213DE9BE26946A5700A54262 /* ContentView.swift */,
+				213DE9EC26946E3700A54262 /* Repositories */,
+				213DE9EB26946E3000A54262 /* Models */,
+				213DE9EA26946E2800A54262 /* ViewModels */,
+				213DE9E926946E1D00A54262 /* Views */,
 				213DE9C026946A5800A54262 /* Assets.xcassets */,
 				213DE9C526946A5800A54262 /* Info.plist */,
+				213DE9E726946E0600A54262 /* GoogleService-Info.plist */,
 				213DE9C226946A5800A54262 /* Preview Content */,
+				213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */,
 			);
 			path = SoulMessage;
 			sourceTree = "<group>";
@@ -130,6 +162,61 @@
 			path = SoulMessageUITests;
 			sourceTree = "<group>";
 		};
+		213DE9E926946E1D00A54262 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9BE26946A5700A54262 /* ContentView.swift */,
+				213DE9F12694704100A54262 /* SignInView.swift */,
+				213DE9F32694709D00A54262 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		213DE9EA26946E2800A54262 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9ED26946FB200A54262 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		213DE9EB26946E3000A54262 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		213DE9EC26946E3700A54262 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		35FBB2571F9F070467D02286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */,
+				13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */,
+				1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */,
+				93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */,
+				345F8EA19BE7EEC33DAB6B6A /* Pods-SoulMessageTests.debug.xcconfig */,
+				7C78016E95E2DC3A29D89206 /* Pods-SoulMessageTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D7524E8E869FE70CE2BA913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */,
+				E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */,
+				CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213DE9DE26946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessage" */;
 			buildPhases = (
+				D642458593F23D23C22AE355 /* [CP] Check Pods Manifest.lock */,
 				213DE9B526946A5700A54262 /* Sources */,
 				213DE9B626946A5700A54262 /* Frameworks */,
 				213DE9B726946A5700A54262 /* Resources */,
+				0CCB10F264C5E79A27613357 /* [CP] Embed Pods Frameworks */,
+				BCBB8A6DA07FF4DE675903D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213DE9E126946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageTests" */;
 			buildPhases = (
+				2D467CF0E2391392F87F653D /* [CP] Check Pods Manifest.lock */,
 				213DE9C626946A5900A54262 /* Sources */,
 				213DE9C726946A5900A54262 /* Frameworks */,
 				213DE9C826946A5900A54262 /* Resources */,
@@ -172,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */;
 			buildPhases = (
+				5D91931ACF4A99B829AB07CC /* [CP] Check Pods Manifest.lock */,
 				213DE9D126946A5900A54262 /* Sources */,
 				213DE9D226946A5900A54262 /* Frameworks */,
 				213DE9D326946A5900A54262 /* Resources */,
+				80CA365B6741DF570BC3EF65 /* [CP] Embed Pods Frameworks */,
+				0AF7E7C23783B69F8FEE95D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213DE9E826946E0600A54262 /* GoogleService-Info.plist in Resources */,
 				213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */,
 				213DE9C126946A5800A54262 /* Assets.xcassets in Resources */,
 			);
@@ -254,13 +349,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AF7E7C23783B69F8FEE95D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CCB10F264C5E79A27613357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D467CF0E2391392F87F653D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoulMessageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D91931ACF4A99B829AB07CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoulMessage-SoulMessageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CA365B6741DF570BC3EF65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBB8A6DA07FF4DE675903D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D642458593F23D23C22AE355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoulMessage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		213DE9B526946A5700A54262 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213DE9EE26946FB200A54262 /* AuthenticationViewModel.swift in Sources */,
+				213DE9F026946FDA00A54262 /* AuthenticationServiceProtocol.swift in Sources */,
+				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
 				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
+				213DE9F22694704100A54262 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +650,7 @@
 		};
 		213DE9DF26946A5900A54262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +673,7 @@
 		};
 		213DE9E026946A5900A54262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +696,7 @@
 		};
 		213DE9E226946A5900A54262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345F8EA19BE7EEC33DAB6B6A /* Pods-SoulMessageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +719,7 @@
 		};
 		213DE9E326946A5900A54262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C78016E95E2DC3A29D89206 /* Pods-SoulMessageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +742,7 @@
 		};
 		213DE9E526946A5900A54262 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +763,7 @@
 		};
 		213DE9E626946A5900A54262 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

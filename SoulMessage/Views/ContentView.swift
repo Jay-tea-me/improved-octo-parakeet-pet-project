@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        switch viewModel.state {
+        case .signedOut:
+            SignInView()
+        case .signedIn:
+            ProfileView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
