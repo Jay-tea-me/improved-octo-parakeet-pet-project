@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
+		213DE9BF26946A5700A54262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BE26946A5700A54262 /* ContentView.swift */; };
+		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
+		213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C326946A5800A54262 /* Preview Assets.xcassets */; };
+		213DE9CF26946A5900A54262 /* SoulMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9CE26946A5900A54262 /* SoulMessageTests.swift */; };
+		213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9D926946A5900A54262 /* SoulMessageUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		213DE9CB26946A5900A54262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213DE9B826946A5700A54262;
+			remoteInfo = SoulMessage;
+		};
+		213DE9D626946A5900A54262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213DE9B826946A5700A54262;
+			remoteInfo = SoulMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		213DE9B926946A5700A54262 /* SoulMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		213DE9BC26946A5700A54262 /* SoulMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageApp.swift; sourceTree = "<group>"; };
+		213DE9BE26946A5700A54262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		213DE9C026946A5800A54262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		213DE9C326946A5800A54262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		213DE9C526946A5800A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213DE9CA26946A5900A54262 /* SoulMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213DE9CE26946A5900A54262 /* SoulMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageTests.swift; sourceTree = "<group>"; };
+		213DE9D026946A5900A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213DE9D926946A5900A54262 /* SoulMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageUITests.swift; sourceTree = "<group>"; };
+		213DE9DB26946A5900A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		213DE9B626946A5700A54262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9C726946A5900A54262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9D226946A5900A54262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213DE9B026946A5700A54262 = {
+			isa = PBXGroup;
+			children = (
+				213DE9BB26946A5700A54262 /* SoulMessage */,
+				213DE9CD26946A5900A54262 /* SoulMessageTests */,
+				213DE9D826946A5900A54262 /* SoulMessageUITests */,
+				213DE9BA26946A5700A54262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		213DE9BA26946A5700A54262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9B926946A5700A54262 /* SoulMessage.app */,
+				213DE9CA26946A5900A54262 /* SoulMessageTests.xctest */,
+				213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		213DE9BB26946A5700A54262 /* SoulMessage */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9BC26946A5700A54262 /* SoulMessageApp.swift */,
+				213DE9BE26946A5700A54262 /* ContentView.swift */,
+				213DE9C026946A5800A54262 /* Assets.xcassets */,
+				213DE9C526946A5800A54262 /* Info.plist */,
+				213DE9C226946A5800A54262 /* Preview Content */,
+			);
+			path = SoulMessage;
+			sourceTree = "<group>";
+		};
+		213DE9C226946A5800A54262 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9C326946A5800A54262 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		213DE9CD26946A5900A54262 /* SoulMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9CE26946A5900A54262 /* SoulMessageTests.swift */,
+				213DE9D026946A5900A54262 /* Info.plist */,
+			);
+			path = SoulMessageTests;
+			sourceTree = "<group>";
+		};
+		213DE9D826946A5900A54262 /* SoulMessageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9D926946A5900A54262 /* SoulMessageUITests.swift */,
+				213DE9DB26946A5900A54262 /* Info.plist */,
+			);
+			path = SoulMessageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		213DE9B826946A5700A54262 /* SoulMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213DE9DE26946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessage" */;
+			buildPhases = (
+				213DE9B526946A5700A54262 /* Sources */,
+				213DE9B626946A5700A54262 /* Frameworks */,
+				213DE9B726946A5700A54262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoulMessage;
+			productName = SoulMessage;
+			productReference = 213DE9B926946A5700A54262 /* SoulMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		213DE9C926946A5900A54262 /* SoulMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213DE9E126946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageTests" */;
+			buildPhases = (
+				213DE9C626946A5900A54262 /* Sources */,
+				213DE9C726946A5900A54262 /* Frameworks */,
+				213DE9C826946A5900A54262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213DE9CC26946A5900A54262 /* PBXTargetDependency */,
+			);
+			name = SoulMessageTests;
+			productName = SoulMessageTests;
+			productReference = 213DE9CA26946A5900A54262 /* SoulMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		213DE9D426946A5900A54262 /* SoulMessageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */;
+			buildPhases = (
+				213DE9D126946A5900A54262 /* Sources */,
+				213DE9D226946A5900A54262 /* Frameworks */,
+				213DE9D326946A5900A54262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213DE9D726946A5900A54262 /* PBXTargetDependency */,
+			);
+			name = SoulMessageUITests;
+			productName = SoulMessageUITests;
+			productReference = 213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		213DE9B126946A5700A54262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					213DE9B826946A5700A54262 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					213DE9C926946A5900A54262 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 213DE9B826946A5700A54262;
+					};
+					213DE9D426946A5900A54262 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 213DE9B826946A5700A54262;
+					};
+				};
+			};
+			buildConfigurationList = 213DE9B426946A5700A54262 /* Build configuration list for PBXProject "SoulMessage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 213DE9B026946A5700A54262;
+			productRefGroup = 213DE9BA26946A5700A54262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				213DE9B826946A5700A54262 /* SoulMessage */,
+				213DE9C926946A5900A54262 /* SoulMessageTests */,
+				213DE9D426946A5900A54262 /* SoulMessageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		213DE9B726946A5700A54262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */,
+				213DE9C126946A5800A54262 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9C826946A5900A54262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9D326946A5900A54262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		213DE9B526946A5700A54262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
+				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9C626946A5900A54262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213DE9CF26946A5900A54262 /* SoulMessageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		213DE9D126946A5900A54262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		213DE9CC26946A5900A54262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213DE9B826946A5700A54262 /* SoulMessage */;
+			targetProxy = 213DE9CB26946A5900A54262 /* PBXContainerItemProxy */;
+		};
+		213DE9D726946A5900A54262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213DE9B826946A5700A54262 /* SoulMessage */;
+			targetProxy = 213DE9D626946A5900A54262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		213DE9DC26946A5900A54262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		213DE9DD26946A5900A54262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		213DE9DF26946A5900A54262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SoulMessage/Preview Content\"";
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SoulMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		213DE9E026946A5900A54262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SoulMessage/Preview Content\"";
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SoulMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		213DE9E226946A5900A54262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				INFOPLIST_FILE = SoulMessageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMessage.app/SoulMessage";
+			};
+			name = Debug;
+		};
+		213DE9E326946A5900A54262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				INFOPLIST_FILE = SoulMessageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMessage.app/SoulMessage";
+			};
+			name = Release;
+		};
+		213DE9E526946A5900A54262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				INFOPLIST_FILE = SoulMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoulMessage;
+			};
+			name = Debug;
+		};
+		213DE9E626946A5900A54262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4RVCKBN8K;
+				INFOPLIST_FILE = SoulMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoulMessage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		213DE9B426946A5700A54262 /* Build configuration list for PBXProject "SoulMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213DE9DC26946A5900A54262 /* Debug */,
+				213DE9DD26946A5900A54262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213DE9DE26946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213DE9DF26946A5900A54262 /* Debug */,
+				213DE9E026946A5900A54262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213DE9E126946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213DE9E226946A5900A54262 /* Debug */,
+				213DE9E326946A5900A54262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213DE9E526946A5900A54262 /* Debug */,
+				213DE9E626946A5900A54262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 213DE9B126946A5700A54262 /* Project object */;
+}
