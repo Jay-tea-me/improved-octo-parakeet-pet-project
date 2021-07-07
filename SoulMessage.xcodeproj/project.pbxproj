@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		068E027B2B8425632FEF55A5 /* Pods_SoulMessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */; };
 		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
 		213DE9BF26946A5700A54262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BE26946A5700A54262 /* ContentView.swift */; };
 		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
@@ -19,18 +18,13 @@
 		213DE9F026946FDA00A54262 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */; };
 		213DE9F22694704100A54262 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F12694704100A54262 /* SignInView.swift */; };
 		213DE9F42694709D00A54262 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F32694709D00A54262 /* ProfileView.swift */; };
+		213DE9F62694AC9500A54262 /* GeoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F52694AC9500A54262 /* GeoMessageModel.swift */; };
+		213DE9F82694AD4300A54262 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F72694AD4300A54262 /* RepositoryProtocol.swift */; };
 		7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */; };
 		858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		213DE9CB26946A5900A54262 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 213DE9B826946A5700A54262;
-			remoteInfo = SoulMessage;
-		};
 		213DE9D626946A5900A54262 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
@@ -60,6 +54,8 @@
 		213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
 		213DE9F12694704100A54262 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		213DE9F52694AC9500A54262 /* GeoMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageModel.swift; sourceTree = "<group>"; };
+		213DE9F72694AD4300A54262 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
 		345F8EA19BE7EEC33DAB6B6A /* Pods-SoulMessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessageTests.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessageTests/Pods-SoulMessageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C78016E95E2DC3A29D89206 /* Pods-SoulMessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessageTests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessageTests/Pods-SoulMessageTests.release.xcconfig"; sourceTree = "<group>"; };
 		93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068E027B2B8425632FEF55A5 /* Pods_SoulMessageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +126,7 @@
 				213DE9C526946A5800A54262 /* Info.plist */,
 				213DE9E726946E0600A54262 /* GoogleService-Info.plist */,
 				213DE9C226946A5800A54262 /* Preview Content */,
-				213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */,
+				213DE9F926959B4400A54262 /* Services */,
 			);
 			path = SoulMessage;
 			sourceTree = "<group>";
@@ -183,6 +178,7 @@
 		213DE9EB26946E3000A54262 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				213DE9F52694AC9500A54262 /* GeoMessageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +188,15 @@
 			children = (
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		213DE9F926959B4400A54262 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9EF26946FDA00A54262 /* AuthenticationServiceProtocol.swift */,
+				213DE9F72694AD4300A54262 /* RepositoryProtocol.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		35FBB2571F9F070467D02286 /* Pods */ = {
@@ -252,7 +257,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				213DE9CC26946A5900A54262 /* PBXTargetDependency */,
 			);
 			name = SoulMessageTests;
 			productName = SoulMessageTests;
@@ -294,7 +298,6 @@
 					};
 					213DE9C926946A5900A54262 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 213DE9B826946A5700A54262;
 					};
 					213DE9D426946A5900A54262 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -493,8 +496,10 @@
 			files = (
 				213DE9EE26946FB200A54262 /* AuthenticationViewModel.swift in Sources */,
 				213DE9F026946FDA00A54262 /* AuthenticationServiceProtocol.swift in Sources */,
+				213DE9F62694AC9500A54262 /* GeoMessageModel.swift in Sources */,
 				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
 				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
+				213DE9F82694AD4300A54262 /* RepositoryProtocol.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
 				213DE9F22694704100A54262 /* SignInView.swift in Sources */,
 			);
@@ -519,11 +524,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		213DE9CC26946A5900A54262 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 213DE9B826946A5700A54262 /* SoulMessage */;
-			targetProxy = 213DE9CB26946A5900A54262 /* PBXContainerItemProxy */;
-		};
 		213DE9D726946A5900A54262 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 213DE9B826946A5700A54262 /* SoulMessage */;
@@ -699,7 +699,6 @@
 			baseConfigurationReference = 345F8EA19BE7EEC33DAB6B6A /* Pods-SoulMessageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4RVCKBN8K;
 				INFOPLIST_FILE = SoulMessageTests/Info.plist;
@@ -713,7 +712,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMessage.app/SoulMessage";
 			};
 			name = Debug;
 		};
@@ -722,7 +720,6 @@
 			baseConfigurationReference = 7C78016E95E2DC3A29D89206 /* Pods-SoulMessageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4RVCKBN8K;
 				INFOPLIST_FILE = SoulMessageTests/Info.plist;
@@ -736,7 +733,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoulMessage.app/SoulMessage";
 			};
 			name = Release;
 		};
