@@ -7,6 +7,7 @@
 
 import Firebase
 import GoogleSignIn
+import Combine
 
 class AuthenticationViewModel: NSObject, ObservableObject {
     
@@ -16,6 +17,7 @@ class AuthenticationViewModel: NSObject, ObservableObject {
     }
     
     @Published var state: SignInState = .signedOut
+    
     
     override init() {
         super.init()
@@ -29,7 +31,7 @@ class AuthenticationViewModel: NSObject, ObservableObject {
     
 }
 
-extension AuthenticationViewModel: AuthenticationServiceProtocol {
+extension AuthenticationViewModel: AuthenticationServices {
     func signIn() {
         if GIDSignIn.sharedInstance().currentUser != nil { return }
         GIDSignIn.sharedInstance().presentingViewController = UIApplication.shared.windows.first?.rootViewController

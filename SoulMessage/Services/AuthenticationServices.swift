@@ -9,7 +9,7 @@ import Foundation
 
 import Foundation
 
-protocol AuthenticationServiceProtocol {
+protocol AuthenticationServices {
     func signIn()
     func signOut()
 }

@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol RepositoryProtocol {
-    
+protocol RepositoryServices {
     func get()
-    
-    func add()
+    func add(_ message: GeoMessage)
 }

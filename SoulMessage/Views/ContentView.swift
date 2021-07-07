@@ -15,7 +15,8 @@ struct ContentView: View {
         case .signedOut:
             SignInView()
         case .signedIn:
-            ProfileView()
+            GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())
+            GeoMessageListView
         }
     }
 }

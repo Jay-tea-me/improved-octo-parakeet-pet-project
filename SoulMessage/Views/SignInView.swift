@@ -10,11 +10,11 @@ import GoogleSignIn
 
 struct SignInView: View {
     @EnvironmentObject var viewModel:  AuthenticationViewModel
+    
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.font : UIColor(.white)]
-
-    
     }
+    
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)

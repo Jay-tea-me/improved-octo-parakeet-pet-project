@@ -1,14 +1,13 @@
 //
-//  SoulMessageTests.swift
-//  SoulMessageTests
+//  MessageBuilderTests.swift
+//  
 //
-//  Created by Justine Wright on 2021/07/06.
+//  Created by Justine Wright on 2021/07/07.
 //
 
 import XCTest
-@testable import SoulMessage
 
-class SoulMessageTests: XCTestCase {
+class MessageBuilderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

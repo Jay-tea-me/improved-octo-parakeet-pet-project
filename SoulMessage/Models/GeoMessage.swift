@@ -6,11 +6,13 @@
 //
 
 import FirebaseFirestoreSwift
-import CoreLocation
 
-struct GeoMessageModel: Identifiable, Codable {
+struct GeoMessage: Identifiable, Codable {
     @DocumentID var id: String?
     var sender: String
     var body: String
-
+    var latitude: Double
+    var longitude: Double
+    var dated: Double?
+//    var location: Coordinate
 }
