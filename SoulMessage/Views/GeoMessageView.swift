@@ -18,7 +18,6 @@ struct GeoMessageView: View {
             .overlay(ZStack{
                 VStack{
                     Text(geoMessageViewModel.geoMessage.body)
-                        .fixedSize()
                         .font(.title)
                         .foregroundColor(.white)
                         .padding()

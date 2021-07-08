@@ -30,6 +30,7 @@
 		21996CB82696FBA80080AEEF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
+		21E20E3A2697576200832118 /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E392697576200832118 /* TabStyle.swift */; };
 		4D054EAF1B24806B520810D0 /* Pods_MessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54D422119654D8630C71BE9 /* Pods_MessageTests.framework */; };
 		7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */; };
 		858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */; };
@@ -82,6 +83,7 @@
 		21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		21E20DFC26970EBE00832118 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
+		21E20E392697576200832118 /* TabStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyle.swift; sourceTree = "<group>"; };
 		65D0A7ED89EC3942A17E6EC9 /* Pods-MessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageTests.debug.xcconfig"; path = "Target Support Files/Pods-MessageTests/Pods-MessageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessage/Pods-SoulMessage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		213DE9BB26946A5700A54262 /* SoulMessage */ = {
 			isa = PBXGroup;
 			children = (
+				21E20E382697573A00832118 /* UI */,
 				213DE9BC26946A5700A54262 /* SoulMessageApp.swift */,
 				21E20E35269727CB00832118 /* Publishers */,
 				213DE9EC26946E3700A54262 /* Repositories */,
@@ -233,6 +236,14 @@
 				21E20E36269727E200832118 /* AuthPublisher.swift */,
 			);
 			path = Publishers;
+			sourceTree = "<group>";
+		};
+		21E20E382697573A00832118 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				21E20E392697576200832118 /* TabStyle.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		35FBB2571F9F070467D02286 /* Pods */ = {
@@ -551,6 +562,7 @@
 				21996CB82696FBA80080AEEF /* AuthenticationViewModel.swift in Sources */,
 				21996CB3269626B60080AEEF /* GeoMessageListView.swift in Sources */,
 				213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */,
+				21E20E3A2697576200832118 /* TabStyle.swift in Sources */,
 				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
 				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
 				21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */,

@@ -9,11 +9,9 @@ import SwiftUI
 
 struct LandingView: View {
     @EnvironmentObject var authService:  AuthenticationService
-    
     init() {
-        UINavigationBar.appearance().barTintColor = .clear
+        UITabBar.setTransparentTabber()
     }
-    
     var body: some View {
         TabView {
             GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())

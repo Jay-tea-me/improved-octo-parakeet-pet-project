@@ -28,21 +28,28 @@ struct GeoMessageListView: View {
                     }
                     .listStyle(InsetListStyle())
                     
-                    
-                    Button(action: {
-                        showingForm = true
-                    }) {
-                        Circle()
-                            .fill(Color.green)
-                            .frame(height: 60)
-                            .overlay(Image(systemName: "plus").foregroundColor(.white))
-                    }.sheet(isPresented: $showingForm) {
-                        FormView {(geoMessage) in
-                            geoMessageListViewModel.add(geoMessage)
-                            showingForm = false
+                    HStack{
+                        Text("")
+                            .frame(maxWidth: .infinity)
+                        Button(action: {
+                            showingForm = true
+                        }) {
+                            Circle()
+                                .fill(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                                .frame(height: 60, alignment: .bottomTrailing)
+                                .overlay(Image(systemName: "plus").foregroundColor(.white))
+          
+                        }
+                        .sheet(isPresented: $showingForm) {
+                            FormView {(geoMessage) in
+                                geoMessageListViewModel.add(geoMessage)
+                                showingForm = false
+                            }
                         }
                     }
+
                 }
+                    
             }
         
     }
