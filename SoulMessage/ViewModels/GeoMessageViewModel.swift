@@ -8,7 +8,7 @@
 import Combine
 
 final class GeoMessageViewModel: ObservableObject, Identifiable {
-    private let geoMessageRepository = GeoMessageRepository()
+
     @Published var geoMessage: GeoMessage
     var id = ""
     
@@ -19,5 +19,6 @@ final class GeoMessageViewModel: ObservableObject, Identifiable {
             .compactMap { $0.id }
             .assign(to: \.id, on: self)
             .store(in: &cancellables)
+//        & = access property of geomessage
     }
 }

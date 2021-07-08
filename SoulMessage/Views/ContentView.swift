@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
+import Combine
+
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: AuthenticationViewModel
-    
+    @EnvironmentObject var authService: AuthenticationService
+    //transformEnvironmentModifier(.\self){ dump($0) }
     var body: some View {
-        switch viewModel.state {
-        case .signedOut:
+
+        if authService.isSignedIn {
+            LandingView()
+                .environmentObject(authService)
+        } else {
             SignInView()
-        case .signedIn:
-            GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())
-            GeoMessageListView
         }
     }
 }

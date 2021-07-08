@@ -21,23 +21,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SoulMessageApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var viewModel = AuthenticationViewModel()
-    
-    init() {
-//        setupAuthentication()
-    }
+    @StateObject var authService = AuthenticationService()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(viewModel)
-        }
-    }
-}
 
-extension SoulMessageApp {
-    private func setupAuthentication(){
-        FirebaseApp.configure()
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+            if authService.isSignedIn {
+                LandingView()
+                    .environmentObject(authService)
+            } else {
+                SignInView()
+                    .environmentObject(authService)
+            }
+        }
     }
 }

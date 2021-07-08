@@ -8,40 +8,42 @@
 import SwiftUI
 
 struct GeoMessageListView: View {
-    @ObservedObject var geoMessageListViewModel: GeoMessageListViewModel
+    @ObservedObject var geoMessageListViewModel: GeoMessageListViewModel = GeoMessageListViewModel()
     @State private var showingForm = false
-    
+
     var body: some View {
-        NavigationView{
-            VStack{
-                List {
-                    ForEach(geoMessageListViewModel.geoMessageListViewModel) {message in
-                        GeoMessageView(geoMessageViewModel: message)
+
+            ZStack{
+                Color(.black)
+                    .edgesIgnoringSafeArea(.all)
+                VStack{
+
+                    List {
+                        ForEach(geoMessageListViewModel.listGeoMessageViewModel) {message in
+                            GeoMessageView(geoMessageViewModel: message)
+                        }
+                    }.onAppear() {
+                        UITableView.appearance().backgroundColor = UIColor.clear
+                        UITableViewCell.appearance().backgroundColor = UIColor.clear
                     }
-                }
-                .listStyle(InsetListStyle())
-                Button(action: {
-                    showingForm = true
-                }) {
-                    Circle()
-                        .fill(Color.green)
-                        .frame(height: 60)
-                        .overlay(Image(systemName: "plus").foregroundColor(.white))
-                }.sheet(isPresented: $showingForm) {
-                    FormView {(studyCard) in
-                        geoMessageListViewModel.add(studyCard)
-                        showingForm = false
+                    .listStyle(InsetListStyle())
+                    
+                    
+                    Button(action: {
+                        showingForm = true
+                    }) {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(height: 60)
+                            .overlay(Image(systemName: "plus").foregroundColor(.white))
+                    }.sheet(isPresented: $showingForm) {
+                        FormView {(geoMessage) in
+                            geoMessageListViewModel.add(geoMessage)
+                            showingForm = false
+                        }
                     }
                 }
             }
-        }
-//        List(cardListViewModel.studyCards) { card in
-//            Text(card.question)
-//
-//        }
-//        Button("Add Mock Question"){
-//            let card = StudyCard(question: "3 + 4", answer: "7")
-//            cardListViewModel.add(card)
-//        }
+        
     }
 }

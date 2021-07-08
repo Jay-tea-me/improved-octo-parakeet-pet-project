@@ -16,19 +16,18 @@ struct FormView: View {
     var didAddMessage: (_ geoMesage: GeoMessage) -> Void
     
     var body: some View{
-        NavigationView {
             VStack {
                 Form {
-                    TextField ("base phrase", text: $basePhrase)
-                    TextField ("Answer", text: $addedPhrase)
+                    TextField ("Base phrase", text: $basePhrase)
+                    TextField ("Added phrase", text: $addedPhrase)
                 }
-                Button("Create Card") {
+                Button("Engrave Into World") {
                     
-                    let geoMessage = GeoMessage(sender: "Jay", body: "\(basePhrase)+\(addedPhrase)", latitude: 1, longitude: 1, dated: Date().timeIntervalSince1970 )
+                    let geoMessage = GeoMessage(sender: "Jay", body: "\(basePhrase) \(addedPhrase)", latitude: 1, longitude: 1, dated: Date().timeIntervalSince1970 )
                     didAddMessage(geoMessage)
                 }.disabled(basePhrase.isEmpty).padding()
-            }.navigationTitle("New Study Card")
-        }
+            }.navigationTitle("New Message")
+        
     }
 }
 

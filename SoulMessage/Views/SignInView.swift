@@ -9,7 +9,7 @@ import SwiftUI
 import GoogleSignIn
 
 struct SignInView: View {
-    @EnvironmentObject var viewModel:  AuthenticationViewModel
+    @EnvironmentObject var viewModel:  AuthenticationService
     
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.font : UIColor(.white)]

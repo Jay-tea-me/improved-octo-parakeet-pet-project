@@ -10,16 +10,16 @@ import Combine
 
 final class GeoMessageListViewModel: ObservableObject {
     @Published var geoMessageRepository = GeoMessageRepository()
-    @Published var geoMessageListViewModel: [GeoMessageViewModel] = []
+    @Published var listGeoMessageViewModel: [GeoMessageViewModel] = []
     
     private var cancellables: Set<AnyCancellable> = []
     
     init() {
         geoMessageRepository.$geoMessages
-            .map{ geoMessages in
-                geoMessages.map(GeoMessageViewModel.init)
+            .map{ geoMessage in
+                geoMessage.map(GeoMessageViewModel.init)
             }
-            .assign(to: \.geoMessageListViewModel, on: self)
+            .assign(to: \.listGeoMessageViewModel, on: self)
             .store(in: &cancellables)
     }
     

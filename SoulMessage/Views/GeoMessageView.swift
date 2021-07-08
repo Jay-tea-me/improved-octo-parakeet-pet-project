@@ -7,29 +7,38 @@
 
 import SwiftUI
 
-
 struct GeoMessageView: View {
+    
     var geoMessageViewModel: GeoMessageViewModel
+    
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
-            .fill(Color.black)
-            .frame(height: 100)
-            .border(Color.white)
+            .fill(Color.gray)
+            .frame(height: 200)
             .overlay(ZStack{
                 VStack{
-                    Text(geoMessageViewModel.geoMessage.body).padding().font(.custom("Palatino-Bold", size: 20)).foregroundColor(.white)
+                    Text(geoMessageViewModel.geoMessage.body)
+                        .fixedSize()
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding()
 
-                    Text(geoMessageViewModel.geoMessage.sender) .frame(maxWidth: .infinity, alignment: .trailing).font(.custom("ZapfinoiPhoneiPad", size: 15)).foregroundColor(.white)
-                    
-                    Text("\(geoMessageViewModel.geoMessage.longitude), \(geoMessageViewModel.geoMessage.latitude) ").frame(maxWidth: .infinity, alignment: .trailing)
+                    Spacer()
+                    Text("~\(geoMessageViewModel.geoMessage.sender)")
+                        .foregroundColor(.white)
+                        .padding(.trailing)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+
+                    Text("(\(geoMessageViewModel.geoMessage.longitude), \(geoMessageViewModel.geoMessage.latitude)) ")
+                        .foregroundColor(.white)
+                        .padding(.bottom)
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
             })
-        
-        
     }
 }
 
-//
+
 //struct GeoMessage_Previews: PreviewProvider {
 //    static var previews: some View {
 //        GeoMessageView()
