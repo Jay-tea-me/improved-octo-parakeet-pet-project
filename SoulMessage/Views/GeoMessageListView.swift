@@ -29,8 +29,7 @@ struct GeoMessageListView: View {
                     .listStyle(InsetListStyle())
                     
                     HStack{
-                        Text("")
-                            .frame(maxWidth: .infinity)
+                        Spacer()
                         Button(action: {
                             showingForm = true
                         }) {

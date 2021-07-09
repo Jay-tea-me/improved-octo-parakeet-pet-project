@@ -163,18 +163,14 @@
 		213DE9BB26946A5700A54262 /* SoulMessage */ = {
 			isa = PBXGroup;
 			children = (
-				21E20E382697573A00832118 /* UI */,
 				213DE9BC26946A5700A54262 /* SoulMessageApp.swift */,
-				21E20E35269727CB00832118 /* Publishers */,
-				213DE9EC26946E3700A54262 /* Repositories */,
 				213DE9EB26946E3000A54262 /* Models */,
 				213DE9EA26946E2800A54262 /* ViewModels */,
 				213DE9E926946E1D00A54262 /* Views */,
-				213DE9C026946A5800A54262 /* Assets.xcassets */,
 				213DE9C526946A5800A54262 /* Info.plist */,
 				213DE9E726946E0600A54262 /* GoogleService-Info.plist */,
+				2145630B269828C9001210F5 /* Support Files */,
 				213DE9C226946A5800A54262 /* Preview Content */,
-				213DE9F926959B4400A54262 /* Services */,
 			);
 			path = SoulMessage;
 			sourceTree = "<group>";
@@ -245,6 +241,18 @@
 				213DE9F72694AD4300A54262 /* RepositoryServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2145630B269828C9001210F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				213DE9EC26946E3700A54262 /* Repositories */,
+				21E20E35269727CB00832118 /* Publishers */,
+				21E20E382697573A00832118 /* UI */,
+				213DE9C026946A5800A54262 /* Assets.xcassets */,
+				213DE9F926959B4400A54262 /* Services */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 		21E20E35269727CB00832118 /* Publishers */ = {
