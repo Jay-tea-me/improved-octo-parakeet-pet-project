@@ -7,13 +7,13 @@
 
 import SwiftUI
 import Combine
-
+import RealityKit
 
 struct ContentView: View {
     @EnvironmentObject var authService: AuthenticationService
     //transformEnvironmentModifier(.\self){ dump($0) }
     var body: some View {
-
+        
         if authService.isSignedIn {
             LandingView()
                 .environmentObject(authService)

@@ -9,44 +9,77 @@ import XCTest
 
 class SoulMessageTests: XCTestCase {
     
-    func testLatitudeLowerBoundIsCurrentLocationMinusRange(){
-        
+    var messageAreaCalculator: MessageAreaCalculator!
+    var currentLatitude: Double = 1
+    var currentLongitude: Double = 1
+    
+    override func setUp() {
+
+        messageAreaCalculator = MessageAreaCalculator(range: 1, latitude: currentLatitude, longitude: currentLongitude)
     }
     
-    func testLatitudeUpperBoundIsCurrentLocationPlusRange(){
+    func testLatitudeLowerBoundIsCurrentLatitudeMinusRange() {
+        let actualLowerBoundLatitude = messageAreaCalculator.lowerBoundLatitude
+        let expectedLowerBoundLatitude = currentLatitude - messageAreaCalculator.range
         
+        XCTAssertEqual(actualLowerBoundLatitude, expectedLowerBoundLatitude)
     }
     
-    func testLongitudeLowerBoundIsCurrentLocationMinusRange(){
+    func testLatitudeUpperBoundIsCurrentLocationPlusRange() {
+        let actualUpperBoundLatitude = messageAreaCalculator.upperBoundLatitude
+        let expectedUpperBoundLatitude = currentLatitude + messageAreaCalculator.range
         
+        XCTAssertEqual(actualUpperBoundLatitude, expectedUpperBoundLatitude)
     }
     
-    func testLongitudeUpperBoundIsCurrentLocationPlusRange(){
+    func testLongitudeLowerBoundIsCurrentLocationMinusRange() {
+        let actualLowerBoundLongitude = messageAreaCalculator.lowerBoundLongitude
+        let expectedLowerBoundLongitude = currentLongitude - messageAreaCalculator.range
         
+        XCTAssertEqual(actualLowerBoundLongitude, expectedLowerBoundLongitude)
     }
     
-    func testCurrentLongitudeInBounds(){
+    func testLongitudeUpperBoundIsCurrentLocationPlusRange() {
+        let actualUpperBoundLongitude = messageAreaCalculator.upperBoundLongitude
+        let expectedUpperBoundLongitude = currentLongitude + messageAreaCalculator.range
         
+        XCTAssertEqual(actualUpperBoundLongitude, expectedUpperBoundLongitude)
     }
     
-    func testCurrentLatitudeInBounds(){
+    func testLongitudeStaysInBoundsWithCurrentLongitudeOf85() {
+        messageAreaCalculator.longitude = 85
         
+        let actualUpperBoundLongitude = messageAreaCalculator.upperBoundLongitude
+        let expectedUpperBoundLongitude: Double = -84
+        
+        XCTAssertEqual(actualUpperBoundLongitude, expectedUpperBoundLongitude)
     }
     
-    func testNewUpperBoundLongitudeInBounds(){
+    func testLongitudeStaysInBoundsWithCurrentLongitudeOf0() {
+        messageAreaCalculator.longitude = 0
         
+        let actualLowerBoundLongitude = messageAreaCalculator.lowerBoundLongitude
+        let expectedLowerBoundLongitude: Double = -1
+        
+        XCTAssertEqual(actualLowerBoundLongitude, expectedLowerBoundLongitude)
     }
     
-    func testNewLowerBoundLongitudeInBounds(){
+    func testLatitudeStaysInBoundsWithCurrentLatitudeOf85() {
+        messageAreaCalculator.latitude = 180
         
+        let actualUpperBoundLatitude = messageAreaCalculator.upperBoundLatitude
+        let expectedUpperBoundLatitude: Double = -179
+        
+        XCTAssertEqual(actualUpperBoundLatitude, expectedUpperBoundLatitude)
     }
     
-    func testNewUpperBoundLatitudeInBounds(){
+    func testLatitudeStaysInBoundsWithCurrentLatitudeOf0() {
+        messageAreaCalculator.latitude = 0
         
-    }
-    
-    func testNewLowerBoundLatitudeInBounds(){
+        let actualLowerBoundLatitude = messageAreaCalculator.lowerBoundLatitude
+        let expectedLowerBoundLatitude: Double = -1
         
+        XCTAssertEqual(actualLowerBoundLatitude, expectedLowerBoundLatitude)
     }
 
 }
