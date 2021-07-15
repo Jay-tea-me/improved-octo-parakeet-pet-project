@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandingView: View {
-    @EnvironmentObject var authService:  AuthenticationService
+    @EnvironmentObject var signInViewModel:  SignInViewModel
     init() {
         UITabBar.setTransparentTabber()
     }
@@ -22,7 +22,7 @@ struct LandingView: View {
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                 }
-                .environmentObject(authService)
+                .environmentObject(signInViewModel)
         }
     }
 }

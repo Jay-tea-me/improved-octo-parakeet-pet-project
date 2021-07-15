@@ -13,25 +13,31 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-    GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+    GoogleAuth.configure()
     return true
   }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+        return GIDSignIn.sharedInstance.handle(url)
+    }
 }
 
 @main
 struct SoulMessageApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject var authService = AuthenticationService()
+    @StateObject var signInViewModel = SignInViewModel(authenticationService: GoogleAuth())
     
     var body: some Scene {
         WindowGroup {
 
-            if authService.isSignedIn {
+            if signInViewModel.isSignedIn {
                 LandingView()
-                    .environmentObject(authService)
+                    .environmentObject(signInViewModel)
             } else {
                 SignInView()
-                    .environmentObject(authService)
+                    .environmentObject(signInViewModel)
             }
         }
     }

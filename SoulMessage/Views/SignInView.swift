@@ -9,7 +9,7 @@ import SwiftUI
 import GoogleSignIn
 
 struct SignInView: View {
-    @EnvironmentObject var viewModel:  AuthenticationService
+    @EnvironmentObject var signInViewModel:  SignInViewModel
     
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.font : UIColor(.white)]
@@ -27,7 +27,7 @@ struct SignInView: View {
                     .font(.largeTitle)
                 
                 Spacer()
-                Button(action: {viewModel.signIn()}, label: {
+                Button(action: {signInViewModel.signin()}, label: {
                     HStack{
                         Image("ic_google").resizable().aspectRatio(contentMode: .fit)
                             .frame(width: 20, height: 20)
