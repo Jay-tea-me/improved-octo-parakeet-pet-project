@@ -28,13 +28,13 @@
 		21996CB3269626B60080AEEF /* GeoMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB2269626B60080AEEF /* GeoMessageListView.swift */; };
 		21996CB62696DE7A0080AEEF /* Shiny in Frameworks */ = {isa = PBXBuildFile; productRef = 21996CB52696DE7A0080AEEF /* Shiny */; };
 		21996CB82696FBA80080AEEF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */; };
+		21C7C1B826A034540048A11F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21C7C1B726A034540048A11F /* FirebaseAuth */; };
+		21C7C1BA26A034540048A11F /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21C7C1B926A034540048A11F /* FirebaseFirestoreSwift-Beta */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
 		21E20E3A2697576200832118 /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E392697576200832118 /* TabStyle.swift */; };
 		21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
 		21E20E442697629900832118 /* SoulMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E432697629900832118 /* SoulMessageTests.swift */; };
-		7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */; };
-		858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage/Pods-SoulMessage.release.xcconfig"; sourceTree = "<group>"; };
-		1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		213DE9B926946A5700A54262 /* SoulMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213DE9BC26946A5700A54262 /* SoulMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageApp.swift; sourceTree = "<group>"; };
 		213DE9BE26946A5700A54262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		213DE9F52694AC9500A54262 /* GeoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessage.swift; sourceTree = "<group>"; };
 		213DE9F72694AD4300A54262 /* RepositoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServices.swift; sourceTree = "<group>"; };
-		21996C9C2696042E0080AEEF /* FirebaseFirestoreSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestoreSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
 		21996CAA269615E10080AEEF /* GeoMessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageListViewModel.swift; sourceTree = "<group>"; };
 		21996CAC269617EF0080AEEF /* GeoMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageViewModel.swift; sourceTree = "<group>"; };
@@ -81,14 +78,6 @@
 		21E20E412697629900832118 /* SoulMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E20E432697629900832118 /* SoulMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageTests.swift; sourceTree = "<group>"; };
 		21E20E452697629900832118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65D0A7ED89EC3942A17E6EC9 /* Pods-MessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageTests.debug.xcconfig"; path = "Target Support Files/Pods-MessageTests/Pods-MessageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; path = "Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests.release.xcconfig"; sourceTree = "<group>"; };
-		985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulMessage.debug.xcconfig"; path = "Target Support Files/Pods-SoulMessage/Pods-SoulMessage.debug.xcconfig"; sourceTree = "<group>"; };
-		A54D422119654D8630C71BE9 /* Pods_MessageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AADDBF8C55FE34774969B25C /* Pods-MessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageTests.release.xcconfig"; path = "Target Support Files/Pods-MessageTests/Pods-MessageTests.release.xcconfig"; sourceTree = "<group>"; };
-		CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessage_SoulMessageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C7C1BA26A034540048A11F /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				21996CB62696DE7A0080AEEF /* Shiny in Frameworks */,
-				7FAE76EA703C9B0F2B6C07E9 /* Pods_SoulMessage.framework in Frameworks */,
+				21C7C1B826A034540048A11F /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858D169561AA5792A9948AB2 /* Pods_SoulMessage_SoulMessageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +115,6 @@
 				213DE9D826946A5900A54262 /* SoulMessageUITests */,
 				21E20E422697629900832118 /* SoulMessageTests */,
 				213DE9BA26946A5700A54262 /* Products */,
-				35FBB2571F9F070467D02286 /* Pods */,
 				6D7524E8E869FE70CE2BA913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -226,12 +214,12 @@
 		2145630B269828C9001210F5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2145630E26984717001210F5 /* Utils */,
 				213DE9EC26946E3700A54262 /* Repositories */,
 				21E20E35269727CB00832118 /* Publishers */,
-				21E20E382697573A00832118 /* UI */,
-				213DE9C026946A5800A54262 /* Assets.xcassets */,
 				213DE9F926959B4400A54262 /* Services */,
+				21E20E382697573A00832118 /* UI */,
+				2145630E26984717001210F5 /* Utils */,
+				213DE9C026946A5800A54262 /* Assets.xcassets */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -269,27 +257,9 @@
 			path = SoulMessageTests;
 			sourceTree = "<group>";
 		};
-		35FBB2571F9F070467D02286 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */,
-				13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */,
-				1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */,
-				93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */,
-				65D0A7ED89EC3942A17E6EC9 /* Pods-MessageTests.debug.xcconfig */,
-				AADDBF8C55FE34774969B25C /* Pods-MessageTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6D7524E8E869FE70CE2BA913 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				21996C9C2696042E0080AEEF /* FirebaseFirestoreSwift.framework */,
-				E174F6F39BB3B8DF9BA50E81 /* Pods_SoulMessage.framework */,
-				E0E4DF3851F844BE49B9616F /* Pods_SoulMessage_SoulMessageUITests.framework */,
-				CB0F1E6A6D5F6AC9AA0B416C /* Pods_SoulMessageTests.framework */,
-				A54D422119654D8630C71BE9 /* Pods_MessageTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,12 +271,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213DE9DE26946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessage" */;
 			buildPhases = (
-				D642458593F23D23C22AE355 /* [CP] Check Pods Manifest.lock */,
 				213DE9B526946A5700A54262 /* Sources */,
 				213DE9B626946A5700A54262 /* Frameworks */,
 				213DE9B726946A5700A54262 /* Resources */,
-				0CCB10F264C5E79A27613357 /* [CP] Embed Pods Frameworks */,
-				BCBB8A6DA07FF4DE675903D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +282,8 @@
 			name = SoulMessage;
 			packageProductDependencies = (
 				21996CB52696DE7A0080AEEF /* Shiny */,
+				21C7C1B726A034540048A11F /* FirebaseAuth */,
+				21C7C1B926A034540048A11F /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = SoulMessage;
 			productReference = 213DE9B926946A5700A54262 /* SoulMessage.app */;
@@ -324,12 +293,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */;
 			buildPhases = (
-				5D91931ACF4A99B829AB07CC /* [CP] Check Pods Manifest.lock */,
 				213DE9D126946A5900A54262 /* Sources */,
 				213DE9D226946A5900A54262 /* Frameworks */,
 				213DE9D326946A5900A54262 /* Resources */,
-				80CA365B6741DF570BC3EF65 /* [CP] Embed Pods Frameworks */,
-				0AF7E7C23783B69F8FEE95D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,6 +356,7 @@
 			mainGroup = 213DE9B026946A5700A54262;
 			packageReferences = (
 				21996CB42696DE7A0080AEEF /* XCRemoteSwiftPackageReference "shiny" */,
+				21C7C1B626A034540048A11F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 213DE9BA26946A5700A54262 /* Products */;
 			projectDirPath = "";
@@ -428,121 +395,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0AF7E7C23783B69F8FEE95D1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0CCB10F264C5E79A27613357 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D91931ACF4A99B829AB07CC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SoulMessage-SoulMessageUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		80CA365B6741DF570BC3EF65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage-SoulMessageUITests/Pods-SoulMessage-SoulMessageUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BCBB8A6DA07FF4DE675903D5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulMessage/Pods-SoulMessage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D642458593F23D23C22AE355 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SoulMessage-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		213DE9B526946A5700A54262 /* Sources */ = {
@@ -717,7 +569,6 @@
 		};
 		213DE9DF26946A5900A54262 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 985BD9E70E9590B42A2BAE23 /* Pods-SoulMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,7 +591,6 @@
 		};
 		213DE9E026946A5900A54262 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13F264D61192B4180261A604 /* Pods-SoulMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -763,7 +613,6 @@
 		};
 		213DE9E526946A5900A54262 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB769F6018D86FC5FC05CD9 /* Pods-SoulMessage-SoulMessageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,7 +633,6 @@
 		};
 		213DE9E626946A5900A54262 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C3ED2A068CFEFA71B5542F /* Pods-SoulMessage-SoulMessageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -889,6 +737,14 @@
 				minimumVersion = 0.0.1;
 			};
 		};
+		21C7C1B626A034540048A11F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -896,6 +752,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 21996CB42696DE7A0080AEEF /* XCRemoteSwiftPackageReference "shiny" */;
 			productName = Shiny;
+		};
+		21C7C1B726A034540048A11F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21C7C1B626A034540048A11F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		21C7C1B926A034540048A11F /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21C7C1B626A034540048A11F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
