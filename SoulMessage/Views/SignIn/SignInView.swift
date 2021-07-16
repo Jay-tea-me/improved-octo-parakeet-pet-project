@@ -9,12 +9,7 @@ import SwiftUI
 import GoogleSignIn
 
 struct SignInView: View {
-//    @EnvironmentObject var signInViewModel:  SignInViewModel
-    
-    init() {
-        UINavigationBar.appearance().titleTextAttributes = [.font : UIColor(.white)]
-    }
-    
+
     var body: some View {
         NavigationView {
         GeometryReader { geometry in

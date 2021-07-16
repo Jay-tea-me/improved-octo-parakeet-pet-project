@@ -10,7 +10,7 @@ import SwiftUI
 import GoogleSignIn
 
 final class SignInController: UIViewController {
-    var signInViewModel: SignInViewModel!
+    private lazy var authService = GoogleAuth()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +23,14 @@ final class SignInController: UIViewController {
     }
     
     @objc func singInButtonPressed(sender: UIButton){
-        signInViewModel.signin()
+        let _ = authService.signIn()
     }
     
 }
 
 struct IntegratedSignInController: UIViewControllerRepresentable {
-    @EnvironmentObject var signInViewModel: SignInViewModel
-    
     func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInController>) -> SignInController {
         let controller = SignInController()
-        controller.signInViewModel = signInViewModel
         return controller
         
     }
