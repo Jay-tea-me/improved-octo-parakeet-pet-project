@@ -23,7 +23,7 @@ final class SignInViewModel: ObservableObject {
         self.authenticationService.observeAuthChanges()
             .map{ $0 != nil }
             .assign(to: &$isSignedIn)
-//        alreadySignedIn()
+        alreadySignedIn()
     }
     
     func signin (){
@@ -35,12 +35,12 @@ final class SignInViewModel: ObservableObject {
     }
     
     func alreadySignedIn(){
-//        authenticationService.currentUser()
-//            .map{ $0 != nil }
-//            .sink { isSignedIn in
-//                self.isSignedIn = isSignedIn
-//            }
-//            .store(in: &cancellables)
+        authenticationService.currentUser()
+            .map{ $0 != nil }
+            .sink { isSignedIn in
+                self.isSignedIn = isSignedIn
+            }
+            .store(in: &cancellables)
         
     }
     

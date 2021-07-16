@@ -11,16 +11,23 @@ import RealityKit
 
 struct ContentView: View {
     @EnvironmentObject var signInViewModel: SignInViewModel
-    //transformEnvironmentModifier(.\self){ dump($0) }
-    var body: some View {
-        
+    
+     var body: some View {
+        SignInView()
+            .fullScreenCover(isPresented: $signInViewModel.isSignedIn, content: {
+                LandingView()
+            })
+      }
+    func containedView()-> AnyView {
         if signInViewModel.isSignedIn {
-            LandingView()
-                .environmentObject(signInViewModel)
+            return AnyView(LandingView())
         } else {
-            SignInView()
+            return AnyView(SignInView())
+            
         }
     }
+
+
 }
 
 struct ContentView_Previews: PreviewProvider {

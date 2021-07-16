@@ -16,12 +16,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     GoogleAuth.configure()
     return true
   }
-    
-    @available(iOS 9.0, *)
-    func application(_ application: UIApplication, open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-        return GIDSignIn.sharedInstance.handle(url)
-    }
 }
 
 @main
@@ -31,8 +25,7 @@ struct SoulMessageApp: App {
     
     var body: some Scene {
         WindowGroup {
-
-            if signInViewModel.isSignedIn {
+            if signInViewModel.isSignedIn{
                 LandingView()
                     .environmentObject(signInViewModel)
             } else {

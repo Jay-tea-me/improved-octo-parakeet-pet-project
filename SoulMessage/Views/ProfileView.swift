@@ -10,7 +10,6 @@ import GoogleSignIn
 
 struct ProfileView: View {
     @EnvironmentObject var signInViewModel: SignInViewModel
-    private let user = GIDSignIn.sharedInstance.currentUser
     
     var body: some View {
         VStack {

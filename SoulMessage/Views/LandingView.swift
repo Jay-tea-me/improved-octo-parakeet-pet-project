@@ -13,17 +13,20 @@ struct LandingView: View {
         UITabBar.setTransparentTabber()
     }
     var body: some View {
-        TabView {
-            GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())
-                .tabItem {
-                    Image(systemName: "camera")
-                }
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                }
-                .environmentObject(signInViewModel)
-        }
+        CustomTabView(
+            tabBarItem: [ "message", "globe", "person"],
+            text: [Text("Messages"), Text("Map"), Text("Profile")],
+            content:[AnyView(GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())), AnyView(Text("Map...")),
+                     AnyView(ProfileView())]
+        )
+    }
+}
+
+struct LandingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LandingView()
+            .preferredColorScheme(.dark)
+            .environmentObject(SignInViewModel(authenticationService: GoogleAuth()))
     }
 }
 
