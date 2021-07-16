@@ -9,14 +9,15 @@ import UIKit
 import SwiftUI
 import GoogleSignIn
 
-class SignInController: UIViewController {
+final class SignInController: UIViewController {
     var signInViewModel: SignInViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let signInButton = GIDSignInButton()
-        signInButton.colorScheme = .dark
+        signInButton.colorScheme = GIDSignInButtonColorScheme.dark
         signInButton.addTarget(self, action: #selector(singInButtonPressed), for: .touchUpInside)
+        signInButton.center = view.center
         self.view.addSubview(signInButton)
         
     }

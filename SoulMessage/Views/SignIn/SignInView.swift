@@ -9,41 +9,36 @@ import SwiftUI
 import GoogleSignIn
 
 struct SignInView: View {
-    @EnvironmentObject var signInViewModel:  SignInViewModel
+//    @EnvironmentObject var signInViewModel:  SignInViewModel
     
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.font : UIColor(.white)]
     }
     
     var body: some View {
-        ZStack {
-//            Color.black.edgesIgnoringSafeArea(.all)
-            VStack {
-                
-                    Spacer()
+        NavigationView {
+        GeometryReader { geometry in
+            let width: CGFloat = min(geometry.size.width, geometry.size.height)
+            let height = width
+            VStack{
+                VStack(alignment: .center, spacing: 40, content: {
                     Image("magic_circle").resizable().aspectRatio(contentMode: .fit)
-                        .frame(width: 150, height: 150, alignment: .center)
-                    Text("Soul Message")
-//                        .foregroundColor(.white)
+                        
+                    Text("SOUL MESSAGE")
                         .font(.largeTitle)
+                        .bold()
+                }).frame(width: width, height: height, alignment: .center)
+                .offset(x: 0, y: width / 3)
+                VStack{
+                        IntegratedSignInController()
                     
-                    Spacer()
-                    IntegratedSignInController()
-//                    Button(action: {signInViewModel.signin()}, label: {
-//                        HStack{
-//                            Image("ic_google").resizable().aspectRatio(contentMode: .fit)
-//                                .frame(width: 20, height: 20)
-//                            Text("Sign In with Google")
-////                                .foregroundColor(.white)
-//                                .font(Font.system(size: 20))
-//                        }
-//                        //                Text("GoogleSignIn")
-//
-//                    })
-//                    .padding()
-//                    .shadow(color: .gray, radius: 4)
-                    Spacer()
+
+                }.frame(height: 100, alignment: .bottom)
+                .offset(x: 0, y: -width / 3)
+                
             }
+        }
+            
         }
     }
 }
@@ -52,5 +47,7 @@ struct SignInView: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
+            .preferredColorScheme(.dark)
+//            .environmentObject(SignInViewModel(authenticationService: GoogleAuth()))
     }
 }

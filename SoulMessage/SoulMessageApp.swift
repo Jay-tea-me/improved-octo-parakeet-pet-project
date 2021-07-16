@@ -28,9 +28,11 @@ struct SoulMessageApp: App {
             if signInViewModel.isSignedIn{
                 LandingView()
                     .environmentObject(signInViewModel)
-            } else {
+            } else if !signInViewModel.isSignedIn {
                 SignInView()
                     .environmentObject(signInViewModel)
+            } else {
+                EmptyView()
             }
         }
     }
