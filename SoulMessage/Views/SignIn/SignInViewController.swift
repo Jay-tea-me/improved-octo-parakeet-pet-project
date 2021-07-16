@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import GoogleSignIn
 
-final class SignInController: UIViewController {
+final class SignInViewController: UIViewController {
     private lazy var authService = GoogleAuth()
 
     override func viewDidLoad() {
@@ -29,14 +29,14 @@ final class SignInController: UIViewController {
 }
 
 struct IntegratedSignInController: UIViewControllerRepresentable {
-    func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInController>) -> SignInController {
-        let controller = SignInController()
+    func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInController>) -> SignInViewController {
+        let controller = SignInViewController()
         return controller
         
     }
     
     
-    func updateUIViewController(_ uiViewController: SignInController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {
+    func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {
         
     }
     

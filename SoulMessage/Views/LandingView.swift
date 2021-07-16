@@ -9,10 +9,7 @@ import SwiftUI
 import CoreLocation
 
 struct LandingView: View {
-    @EnvironmentObject var signInViewModel:  SignInViewModel
-    init() {
-        UITabBar.setTransparentTabber()
-    }
+
     var body: some View {
         CustomTabView(
             tabBarItem: [ "message", "globe", "person"],
@@ -27,7 +24,7 @@ struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
         LandingView()
             .preferredColorScheme(.dark)
-            .environmentObject(SignInViewModel(authenticationService: GoogleAuth()))
+
     }
 }
 

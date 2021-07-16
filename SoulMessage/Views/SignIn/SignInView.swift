@@ -6,33 +6,32 @@
 //
 
 import SwiftUI
-import GoogleSignIn
+
 
 struct SignInView: View {
-
+    
     var body: some View {
-        NavigationView {
         GeometryReader { geometry in
             let width: CGFloat = min(geometry.size.width, geometry.size.height)
             let height = width
             VStack{
                 VStack(alignment: .center, spacing: 40, content: {
                     Image("magic_circle").resizable().aspectRatio(contentMode: .fit)
-                        
+                    
                     Text("SOUL MESSAGE")
                         .font(.largeTitle)
                         .bold()
                 }).frame(width: width, height: height, alignment: .center)
-                .offset(x: 0, y: width / 3)
-                VStack{
-                        IntegratedSignInController()
-                    
-
-                }.frame(height: 100, alignment: .bottom)
-                .offset(x: 0, y: -width / 3)
+                .offset(x: 0, y: width / 4)
+                Spacer()
+                VStack(alignment: .center, spacing: 0, content: {
+                    IntegratedSignInController()
+                        .frame(height: 50, alignment: .bottom)
+                        .offset(x: 0, y: -400)
+                })
+                
                 
             }
-        }
             
         }
     }

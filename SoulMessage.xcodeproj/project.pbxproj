@@ -22,7 +22,7 @@
 		21760DE826A0B5F500DFB4CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DE726A0B5F500DFB4CF /* FirebaseAuth */; };
 		21760DEA26A0B5F500DFB4CF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DE926A0B5F500DFB4CF /* FirebaseFirestore */; };
 		21760DEC26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DEB26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta */; };
-		21760DF026A159FB00DFB4CF /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SigninController.swift */; };
+		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
 		21760DFA26A1761D00DFB4CF /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF926A1761D00DFB4CF /* GooglePlaces */; };
@@ -40,6 +40,7 @@
 		21C7C1D026A057450048A11F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1CF26A057450048A11F /* SignInViewModel.swift */; };
 		21C7C1D226A0751D0048A11F /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D126A0751D0048A11F /* GoogleAuth.swift */; };
 		21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D526A0A64D0048A11F /* CustomTabView.swift */; };
+		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
 		21E20E3A2697576200832118 /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E392697576200832118 /* TabStyle.swift */; };
@@ -73,7 +74,7 @@
 		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		213DE9F52694AC9500A54262 /* GeoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessage.swift; sourceTree = "<group>"; };
 		213DE9F72694AD4300A54262 /* RepositoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServices.swift; sourceTree = "<group>"; };
-		21760DEF26A159FB00DFB4CF /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
+		21760DEF26A159FB00DFB4CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		21760DF426A16CAD00DFB4CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
 		21996CAA269615E10080AEEF /* GeoMessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageListViewModel.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		21C7C1CF26A057450048A11F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		21C7C1D126A0751D0048A11F /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 		21C7C1D526A0A64D0048A11F /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		21DF46B126A1E28600F9D98C /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		21E20DFC26970EBE00832118 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		21E20E392697576200832118 /* TabStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyle.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				213DE9BE26946A5700A54262 /* ContentView.swift */,
 				21760DF326A16C8E00DFB4CF /* Map */,
 				21760DF126A15C0200DFB4CF /* SignIn */,
+				21DF46B026A1E22E00F9D98C /* SignOut */,
 				21760DED26A1592E00DFB4CF /* Messaging */,
 				213DE9F32694709D00A54262 /* ProfileView.swift */,
 				21E20DFC26970EBE00832118 /* LandingView.swift */,
@@ -266,7 +269,7 @@
 		21760DF126A15C0200DFB4CF /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				21760DEF26A159FB00DFB4CF /* SigninController.swift */,
+				21760DEF26A159FB00DFB4CF /* SignInViewController.swift */,
 				213DE9F12694704100A54262 /* SignInView.swift */,
 			);
 			path = SignIn;
@@ -278,6 +281,14 @@
 				21760DF426A16CAD00DFB4CF /* MapView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		21DF46B026A1E22E00F9D98C /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+				21DF46B126A1E28600F9D98C /* SignOutViewController.swift */,
+			);
+			path = SignOut;
 			sourceTree = "<group>";
 		};
 		21E20E35269727CB00832118 /* Publishers */ = {
@@ -461,7 +472,7 @@
 				213DE9F026946FDA00A54262 /* AuthenticationServices.swift in Sources */,
 				21996CAF26961A890080AEEF /* GeoMessageView.swift in Sources */,
 				21E20DFD26970EBE00832118 /* LandingView.swift in Sources */,
-				21760DF026A159FB00DFB4CF /* SigninController.swift in Sources */,
+				21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */,
 				21996CAB269615E10080AEEF /* GeoMessageListViewModel.swift in Sources */,
 				21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */,
 				21C7C1D026A057450048A11F /* SignInViewModel.swift in Sources */,
@@ -478,6 +489,7 @@
 				213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
 				21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */,
+				21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */,
 				213DE9F22694704100A54262 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
