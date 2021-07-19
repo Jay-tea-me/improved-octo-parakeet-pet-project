@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212432BF26A42580004238E6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B226A42580004238E6 /* Roboto-Medium.ttf */; };
+		212432C026A42580004238E6 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B326A42580004238E6 /* Roboto-Light.ttf */; };
+		212432C126A42580004238E6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B426A42580004238E6 /* Roboto-Regular.ttf */; };
+		212432C226A42580004238E6 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B526A42580004238E6 /* Roboto-MediumItalic.ttf */; };
+		212432C326A42580004238E6 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B626A42580004238E6 /* Roboto-ThinItalic.ttf */; };
+		212432C426A42580004238E6 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B726A42580004238E6 /* Roboto-BoldItalic.ttf */; };
+		212432C526A42580004238E6 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B826A42580004238E6 /* Roboto-LightItalic.ttf */; };
+		212432C626A42580004238E6 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432B926A42580004238E6 /* Roboto-Italic.ttf */; };
+		212432C726A42580004238E6 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 212432BA26A42580004238E6 /* LICENSE.txt */; };
+		212432C826A42580004238E6 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BB26A42580004238E6 /* Roboto-BlackItalic.ttf */; };
+		212432C926A42580004238E6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BC26A42580004238E6 /* Roboto-Bold.ttf */; };
+		212432CA26A42580004238E6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BD26A42580004238E6 /* Roboto-Thin.ttf */; };
+		212432CB26A42580004238E6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BE26A42580004238E6 /* Roboto-Black.ttf */; };
 		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
 		213DE9BF26946A5700A54262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BE26946A5700A54262 /* ContentView.swift */; };
 		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
@@ -19,9 +32,6 @@
 		213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F52694AC9500A54262 /* GeoMessage.swift */; };
 		213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F72694AD4300A54262 /* RepositoryServices.swift */; };
 		2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
-		21760DE826A0B5F500DFB4CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DE726A0B5F500DFB4CF /* FirebaseAuth */; };
-		21760DEA26A0B5F500DFB4CF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DE926A0B5F500DFB4CF /* FirebaseFirestore */; };
-		21760DEC26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DEB26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
@@ -41,6 +51,9 @@
 		21C7C1D226A0751D0048A11F /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D126A0751D0048A11F /* GoogleAuth.swift */; };
 		21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D526A0A64D0048A11F /* CustomTabView.swift */; };
 		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
+		21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B426A1F76B00F9D98C /* FirebaseAuth */; };
+		21DF46B726A1F76B00F9D98C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B626A1F76B00F9D98C /* FirebaseFirestore */; };
+		21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
 		21E20E3A2697576200832118 /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E392697576200832118 /* TabStyle.swift */; };
@@ -59,6 +72,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		212432B226A42580004238E6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		212432B326A42580004238E6 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		212432B426A42580004238E6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		212432B526A42580004238E6 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		212432B626A42580004238E6 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		212432B726A42580004238E6 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		212432B826A42580004238E6 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		212432B926A42580004238E6 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		212432BA26A42580004238E6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		212432BB26A42580004238E6 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		212432BC26A42580004238E6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		212432BD26A42580004238E6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		212432BE26A42580004238E6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		213DE9B926946A5700A54262 /* SoulMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213DE9BC26946A5700A54262 /* SoulMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageApp.swift; sourceTree = "<group>"; };
 		213DE9BE26946A5700A54262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,12 +130,12 @@
 				21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */,
 				21760DFC26A1761D00DFB4CF /* GoogleMapsM4B in Frameworks */,
 				21C7C1C526A03BE10048A11F /* GoogleSignIn in Frameworks */,
-				21760DEC26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				21760DFA26A1761D00DFB4CF /* GooglePlaces in Frameworks */,
 				21760E0026A1761D00DFB4CF /* GoogleMaps in Frameworks */,
+				21DF46B726A1F76B00F9D98C /* FirebaseFirestore in Frameworks */,
+				21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */,
 				21760DFE26A1761D00DFB4CF /* GoogleMapsCore in Frameworks */,
-				21760DE826A0B5F500DFB4CF /* FirebaseAuth in Frameworks */,
-				21760DEA26A0B5F500DFB4CF /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +156,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212432AE26A424FF004238E6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				212432B126A42580004238E6 /* Roboto */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		212432AF26A4250C004238E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				212432AE26A424FF004238E6 /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		212432B026A42511004238E6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2145630E26984717001210F5 /* Utils */,
+				21E20E382697573A00832118 /* UI */,
+				213DE9F926959B4400A54262 /* Services */,
+				21E20E35269727CB00832118 /* Publishers */,
+				213DE9EC26946E3700A54262 /* Repositories */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		212432B126A42580004238E6 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				212432B226A42580004238E6 /* Roboto-Medium.ttf */,
+				212432B326A42580004238E6 /* Roboto-Light.ttf */,
+				212432B426A42580004238E6 /* Roboto-Regular.ttf */,
+				212432B526A42580004238E6 /* Roboto-MediumItalic.ttf */,
+				212432B626A42580004238E6 /* Roboto-ThinItalic.ttf */,
+				212432B726A42580004238E6 /* Roboto-BoldItalic.ttf */,
+				212432B826A42580004238E6 /* Roboto-LightItalic.ttf */,
+				212432B926A42580004238E6 /* Roboto-Italic.ttf */,
+				212432BA26A42580004238E6 /* LICENSE.txt */,
+				212432BB26A42580004238E6 /* Roboto-BlackItalic.ttf */,
+				212432BC26A42580004238E6 /* Roboto-Bold.ttf */,
+				212432BD26A42580004238E6 /* Roboto-Thin.ttf */,
+				212432BE26A42580004238E6 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
 		213DE9B026946A5700A54262 = {
 			isa = PBXGroup;
 			children = (
@@ -238,11 +312,8 @@
 		2145630B269828C9001210F5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				213DE9EC26946E3700A54262 /* Repositories */,
-				21E20E35269727CB00832118 /* Publishers */,
-				213DE9F926959B4400A54262 /* Services */,
-				21E20E382697573A00832118 /* UI */,
-				2145630E26984717001210F5 /* Utils */,
+				212432B026A42511004238E6 /* Scripts */,
+				212432AF26A4250C004238E6 /* Resources */,
 				213DE9C026946A5800A54262 /* Assets.xcassets */,
 			);
 			path = "Support Files";
@@ -341,14 +412,14 @@
 			name = SoulMessage;
 			packageProductDependencies = (
 				21C7C1C426A03BE10048A11F /* GoogleSignIn */,
-				21760DE726A0B5F500DFB4CF /* FirebaseAuth */,
-				21760DE926A0B5F500DFB4CF /* FirebaseFirestore */,
-				21760DEB26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta */,
 				21760DF726A1761D00DFB4CF /* GoogleMapsBase */,
 				21760DF926A1761D00DFB4CF /* GooglePlaces */,
 				21760DFB26A1761D00DFB4CF /* GoogleMapsM4B */,
 				21760DFD26A1761D00DFB4CF /* GoogleMapsCore */,
 				21760DFF26A1761D00DFB4CF /* GoogleMaps */,
+				21DF46B426A1F76B00F9D98C /* FirebaseAuth */,
+				21DF46B626A1F76B00F9D98C /* FirebaseFirestore */,
+				21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */,
 			);
 			productName = SoulMessage;
 			productReference = 213DE9B926946A5700A54262 /* SoulMessage.app */;
@@ -421,8 +492,8 @@
 			mainGroup = 213DE9B026946A5700A54262;
 			packageReferences = (
 				21C7C1C326A03BE00048A11F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				21760DE626A0B5F500DFB4CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
+				21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 213DE9BA26946A5700A54262 /* Products */;
 			projectDirPath = "";
@@ -440,8 +511,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212432C926A42580004238E6 /* Roboto-Bold.ttf in Resources */,
+				212432C726A42580004238E6 /* LICENSE.txt in Resources */,
+				212432C426A42580004238E6 /* Roboto-BoldItalic.ttf in Resources */,
+				212432C126A42580004238E6 /* Roboto-Regular.ttf in Resources */,
+				212432C526A42580004238E6 /* Roboto-LightItalic.ttf in Resources */,
+				212432BF26A42580004238E6 /* Roboto-Medium.ttf in Resources */,
 				213DE9E826946E0600A54262 /* GoogleService-Info.plist in Resources */,
+				212432C826A42580004238E6 /* Roboto-BlackItalic.ttf in Resources */,
+				212432CA26A42580004238E6 /* Roboto-Thin.ttf in Resources */,
+				212432C026A42580004238E6 /* Roboto-Light.ttf in Resources */,
+				212432C326A42580004238E6 /* Roboto-ThinItalic.ttf in Resources */,
+				212432CB26A42580004238E6 /* Roboto-Black.ttf in Resources */,
+				212432C226A42580004238E6 /* Roboto-MediumItalic.ttf in Resources */,
 				213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */,
+				212432C626A42580004238E6 /* Roboto-Italic.ttf in Resources */,
 				213DE9C126946A5800A54262 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -806,14 +890,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		21760DE626A0B5F500DFB4CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.3.1;
-			};
-		};
 		21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
@@ -830,24 +906,17 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		21760DE726A0B5F500DFB4CF /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21760DE626A0B5F500DFB4CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		21760DE926A0B5F500DFB4CF /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21760DE626A0B5F500DFB4CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		21760DEB26A0B5F500DFB4CF /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21760DE626A0B5F500DFB4CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
 		21760DF726A1761D00DFB4CF /* GoogleMapsBase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
@@ -877,6 +946,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 21C7C1C326A03BE00048A11F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		21DF46B426A1F76B00F9D98C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		21DF46B626A1F76B00F9D98C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

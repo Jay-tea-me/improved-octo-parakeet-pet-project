@@ -14,15 +14,15 @@ final class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let signInButton = GIDSignInButton()
-        signInButton.colorScheme = GIDSignInButtonColorScheme.dark
+        signInButton.colorScheme = .dark
         signInButton.addTarget(self, action: #selector(singInButtonPressed), for: .touchUpInside)
-        signInButton.center = view.center
-        self.view.addSubview(signInButton)
         
+        self.view.addSubview(signInButton)
     }
     
-    @objc func singInButtonPressed(sender: UIButton){
+    @objc func singInButtonPressed(sender: UIButton) {
         let _ = authService.signIn()
     }
     
@@ -32,13 +32,8 @@ struct IntegratedSignInController: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInController>) -> SignInViewController {
         let controller = SignInViewController()
         return controller
-        
     }
     
-    
-    func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {
-        
-    }
-    
+    func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {}
     
 }

@@ -14,11 +14,12 @@ final class SignOutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let signOutButton =  UIButton(type: .system)
         signOutButton.setTitle("Sign Out", for: .normal)
         signOutButton.frame = CGRect(x: 100, y: 0, width: 200, height: 100)
         signOutButton.addTarget(self, action: #selector(singOutButtonPressed), for: .touchUpInside)
-//        signOutButton.center = view.center
+
         self.view.addSubview(signOutButton)
     }
     
@@ -32,13 +33,8 @@ struct IntegratedSignOutController: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignOutController>) -> SignOutViewController {
         let controller = SignOutViewController()
         return controller
-        
     }
     
-    
-    func updateUIViewController(_ uiViewController: SignOutViewController, context: UIViewControllerRepresentableContext<IntegratedSignOutController>) {
-        
-    }
-    
+    func updateUIViewController(_ uiViewController: SignOutViewController, context: UIViewControllerRepresentableContext<IntegratedSignOutController>) {}
     
 }

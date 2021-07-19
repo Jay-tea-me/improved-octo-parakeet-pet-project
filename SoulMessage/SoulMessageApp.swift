@@ -13,6 +13,11 @@ import Combine
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    for family in UIFont.familyNames.sorted() {
+        let names = UIFont.fontNames(forFamilyName: family)
+        print("Family: \(family) Font names: \(names)")
+    }
+    
     FirebaseApp.configure()
     GoogleAuth.configure()
     return true
@@ -38,10 +43,10 @@ struct SoulMessageApp: App {
 final class AppState: ObservableObject {
     @Published private(set) var isSignedIn = false
     
-    private var authenticationService: AuthenticationServices!
+    private var authenticationService: AuthenticationServices
     
     private var cancellables: Set<AnyCancellable> = []
-    
+
     init(authenticationService: AuthenticationServices = GoogleAuth()) {
         self.authenticationService = authenticationService
         self.authenticationService.observeAuthChanges()
@@ -49,8 +54,7 @@ final class AppState: ObservableObject {
             .assign(to: &$isSignedIn)
         checkSignInStatus()
     }
-    
-    
+
     func checkSignInStatus(){
         authenticationService.currentUser()
             .map{ $0 != nil }
