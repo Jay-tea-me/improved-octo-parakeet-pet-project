@@ -21,7 +21,6 @@ struct FormView: View {
             VStack {
                 Text("New Message")
                     .font(.largeTitle)
-                    .foregroundColor(.black)
                 Form {
                     TextField ("Base phrase", text: $basePhrase)
                     TextField ("Added phrase", text: $addedPhrase)

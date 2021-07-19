@@ -10,15 +10,20 @@ import Combine
 import RealityKit
 
 struct ContentView: View {
-    @EnvironmentObject var authService: AuthenticationService
-    //transformEnvironmentModifier(.\self){ dump($0) }
-    var body: some View {
-        
-        if authService.isSignedIn {
-            LandingView()
-                .environmentObject(authService)
+    @EnvironmentObject var signInViewModel: SignInViewModel
+    
+     var body: some View {
+        SignInView()
+            .fullScreenCover(isPresented: $signInViewModel.isSignedIn, content: {
+                LandingView()
+            })
+      }
+    func containedView()-> AnyView {
+        if signInViewModel.isSignedIn {
+            return AnyView(LandingView())
         } else {
-            SignInView()
+            return AnyView(SignInView())
+            
         }
     }
 }
@@ -27,5 +32,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.dark)
+            .environmentObject(SignInViewModel(authenticationService: GoogleAuth()))
     }
 }

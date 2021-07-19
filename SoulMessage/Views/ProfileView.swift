@@ -9,15 +9,12 @@ import SwiftUI
 import GoogleSignIn
 
 struct ProfileView: View {
-    @EnvironmentObject var authService:   AuthenticationService
-    private let user = GIDSignIn.sharedInstance().currentUser
-    
     var body: some View {
-        VStack {
-            Button(action: {authService.signOut()}, label: {
-                Text("Sign Out")
-            })
-        }
+        VStack{
+            IntegratedSignOutController()
+
+        }.frame(height: 100, alignment: .bottom)
+        .offset(x: 0, y: -100)
     }
 }
 

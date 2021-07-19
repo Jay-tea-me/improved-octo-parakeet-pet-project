@@ -13,6 +13,7 @@ import Combine
 final class GeoMessageRepository:  ObservableObject, RepositoryServices {
 
     private let path = "geoMessages"
+    
     private let store = Firestore.firestore()
     @Published var geoMessages: [GeoMessage] = []
     
