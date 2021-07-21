@@ -71,6 +71,13 @@
 			remoteGlobalIDString = 213DE9B826946A5700A54262;
 			remoteInfo = SoulMessage;
 		};
+		21D1C7C026A867F6001D9BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213DE9B826946A5700A54262;
+			remoteInfo = SoulMessage;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -464,6 +471,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				21D1C7C126A867F6001D9BDC /* PBXTargetDependency */,
 			);
 			name = SoulMessageTests;
 			productName = SoulMessageTests;
@@ -614,6 +622,11 @@
 			isa = PBXTargetDependency;
 			target = 213DE9B826946A5700A54262 /* SoulMessage */;
 			targetProxy = 213DE9D626946A5900A54262 /* PBXContainerItemProxy */;
+		};
+		21D1C7C126A867F6001D9BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213DE9B826946A5700A54262 /* SoulMessage */;
+			targetProxy = 21D1C7C026A867F6001D9BDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
