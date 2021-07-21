@@ -23,7 +23,6 @@
 		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
 		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
 		213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C326946A5800A54262 /* Preview Assets.xcassets */; };
-		213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9D926946A5900A54262 /* SoulMessageUITests.swift */; };
 		213DE9E826946E0600A54262 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9E726946E0600A54262 /* GoogleService-Info.plist */; };
 		213DE9F026946FDA00A54262 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */; };
 		213DE9F22694704100A54262 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F12694704100A54262 /* SignInView.swift */; };
@@ -64,13 +63,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		213DE9D626946A5900A54262 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 213DE9B826946A5700A54262;
-			remoteInfo = SoulMessage;
-		};
 		21D1C7C026A867F6001D9BDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 213DE9B126946A5700A54262 /* Project object */;
@@ -99,9 +91,6 @@
 		213DE9C026946A5800A54262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213DE9C326946A5800A54262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		213DE9C526946A5800A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		213DE9D926946A5900A54262 /* SoulMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageUITests.swift; sourceTree = "<group>"; };
-		213DE9DB26946A5900A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		213DE9E726946E0600A54262 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServices.swift; sourceTree = "<group>"; };
 		213DE9F12694704100A54262 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -145,13 +134,6 @@
 				21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */,
 				21760DFE26A1761D00DFB4CF /* GoogleMapsCore in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		213DE9D226946A5900A54262 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				213DE9BB26946A5700A54262 /* SoulMessage */,
-				213DE9D826946A5900A54262 /* SoulMessageUITests */,
 				21E20E422697629900832118 /* SoulMessageTests */,
 				213DE9BA26946A5700A54262 /* Products */,
 				6D7524E8E869FE70CE2BA913 /* Frameworks */,
@@ -229,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				213DE9B926946A5700A54262 /* SoulMessage.app */,
-				213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */,
 				21E20E412697629900832118 /* SoulMessageTests.xctest */,
 			);
 			name = Products;
@@ -256,15 +236,6 @@
 				213DE9C326946A5800A54262 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		213DE9D826946A5900A54262 /* SoulMessageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				213DE9D926946A5900A54262 /* SoulMessageUITests.swift */,
-				213DE9DB26946A5900A54262 /* Info.plist */,
-			);
-			path = SoulMessageUITests;
 			sourceTree = "<group>";
 		};
 		213DE9E926946E1D00A54262 /* Views */ = {
@@ -442,24 +413,6 @@
 			productReference = 213DE9B926946A5700A54262 /* SoulMessage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		213DE9D426946A5900A54262 /* SoulMessageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */;
-			buildPhases = (
-				213DE9D126946A5900A54262 /* Sources */,
-				213DE9D226946A5900A54262 /* Frameworks */,
-				213DE9D326946A5900A54262 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				213DE9D726946A5900A54262 /* PBXTargetDependency */,
-			);
-			name = SoulMessageUITests;
-			productName = SoulMessageUITests;
-			productReference = 213DE9D526946A5900A54262 /* SoulMessageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		21E20E402697629900832118 /* SoulMessageTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21E20E462697629900832118 /* Build configuration list for PBXNativeTarget "SoulMessageTests" */;
@@ -490,10 +443,6 @@
 					213DE9B826946A5700A54262 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					213DE9D426946A5900A54262 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 213DE9B826946A5700A54262;
-					};
 					21E20E402697629900832118 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -518,7 +467,6 @@
 			projectRoot = "";
 			targets = (
 				213DE9B826946A5700A54262 /* SoulMessage */,
-				213DE9D426946A5900A54262 /* SoulMessageUITests */,
 				21E20E402697629900832118 /* SoulMessageTests */,
 			);
 		};
@@ -545,13 +493,6 @@
 				213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */,
 				212432C626A42580004238E6 /* Roboto-Italic.ttf in Resources */,
 				213DE9C126946A5800A54262 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		213DE9D326946A5900A54262 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,14 +535,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		213DE9D126946A5900A54262 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21E20E3D2697629900832118 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,11 +551,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		213DE9D726946A5900A54262 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 213DE9B826946A5700A54262 /* SoulMessage */;
-			targetProxy = 213DE9D626946A5900A54262 /* PBXContainerItemProxy */;
-		};
 		21D1C7C126A867F6001D9BDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 213DE9B826946A5700A54262 /* SoulMessage */;
@@ -797,46 +725,6 @@
 			};
 			name = Release;
 		};
-		213DE9E526946A5900A54262 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X4RVCKBN8K;
-				INFOPLIST_FILE = SoulMessageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoulMessage;
-			};
-			name = Debug;
-		};
-		213DE9E626946A5900A54262 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X4RVCKBN8K;
-				INFOPLIST_FILE = SoulMessageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.justFoxing.SoulMessageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoulMessage;
-			};
-			name = Release;
-		};
 		21E20E472697629900832118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -890,15 +778,6 @@
 			buildConfigurations = (
 				213DE9DF26946A5900A54262 /* Debug */,
 				213DE9E026946A5900A54262 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		213DE9E426946A5900A54262 /* Build configuration list for PBXNativeTarget "SoulMessageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				213DE9E526946A5900A54262 /* Debug */,
-				213DE9E626946A5900A54262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
