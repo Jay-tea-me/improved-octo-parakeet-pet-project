@@ -7,7 +7,7 @@
 import Combine
 
 #if canImport(FirebaseAuth)
-import YourFramework
+import FirebaseAuth
 import Firebase
 #endif
     

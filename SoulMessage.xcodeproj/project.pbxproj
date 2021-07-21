@@ -21,7 +21,6 @@
 		212432CA26A42580004238E6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BD26A42580004238E6 /* Roboto-Thin.ttf */; };
 		212432CB26A42580004238E6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 212432BE26A42580004238E6 /* Roboto-Black.ttf */; };
 		213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BC26946A5700A54262 /* SoulMessageApp.swift */; };
-		213DE9BF26946A5700A54262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9BE26946A5700A54262 /* ContentView.swift */; };
 		213DE9C126946A5800A54262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C026946A5800A54262 /* Assets.xcassets */; };
 		213DE9C426946A5800A54262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213DE9C326946A5800A54262 /* Preview Assets.xcassets */; };
 		213DE9DA26946A5900A54262 /* SoulMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9D926946A5900A54262 /* SoulMessageUITests.swift */; };
@@ -90,7 +89,6 @@
 		212432BE26A42580004238E6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		213DE9B926946A5700A54262 /* SoulMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoulMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213DE9BC26946A5700A54262 /* SoulMessageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageApp.swift; sourceTree = "<group>"; };
-		213DE9BE26946A5700A54262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		213DE9C026946A5800A54262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213DE9C326946A5800A54262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		213DE9C526946A5800A54262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 		213DE9E926946E1D00A54262 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				213DE9BE26946A5700A54262 /* ContentView.swift */,
 				21760DF326A16C8E00DFB4CF /* Map */,
 				21760DF126A15C0200DFB4CF /* SignIn */,
 				21DF46B026A1E22E00F9D98C /* SignOut */,
@@ -580,7 +577,6 @@
 				21E20E3A2697576200832118 /* TabStyle.swift in Sources */,
 				2152FB4A26A57F3C0003C188 /* AppState.swift in Sources */,
 				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
-				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
 				21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */,
 				213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,

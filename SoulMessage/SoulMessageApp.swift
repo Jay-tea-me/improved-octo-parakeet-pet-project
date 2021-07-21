@@ -27,7 +27,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SoulMessageApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject private var appState = AppState()
+    @StateObject private var appState = AppState(authenticationService: GoogleAuth())
     
     var body: some Scene {
         WindowGroup {
