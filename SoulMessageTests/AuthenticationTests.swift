@@ -89,11 +89,10 @@ class AuthenticationTests: XCTestCase {
         mockAuthService.serverStateSub.send(User())
         var changedState = try `await`(changedStatePub)
         
-        mockAuthService.serverStateSub.send(nil)
         //sign out
-        changedState = try `await`(changedStatePub)
         mockAuthService.serverStateSub.send(nil)
-        
+        changedState = try `await`(changedStatePub)
+
         XCTAssertEqual(changedState.count, 1)
         XCTAssertEqual(changedState.last, false)
     }
