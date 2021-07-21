@@ -59,7 +59,7 @@ extension XCTestCase {
 
 class AuthenticationTests: XCTestCase {
     var appState: AppState!
-    var mockAuthService: MockAuthenticationService!
+    var mockAuthService: MockAuthenticationService! 
     
     override func setUp() {
         mockAuthService = MockAuthenticationService()
