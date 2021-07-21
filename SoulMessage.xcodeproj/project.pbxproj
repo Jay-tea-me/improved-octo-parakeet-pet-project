@@ -32,6 +32,11 @@
 		213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F52694AC9500A54262 /* GeoMessage.swift */; };
 		213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F72694AD4300A54262 /* RepositoryServices.swift */; };
 		2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
+		2152FB4826A57E8A0003C188 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */; };
+		2152FB4A26A57F3C0003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
+		2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4B26A582010003C188 /* MockAuthenticationService.swift */; };
+		2152FB4D26A5825B0003C188 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */; };
+		2152FB4F26A583F20003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
@@ -45,9 +50,7 @@
 		21996CAF26961A890080AEEF /* GeoMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CAE26961A890080AEEF /* GeoMessageView.swift */; };
 		21996CB12696234E0080AEEF /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB02696234E0080AEEF /* FormView.swift */; };
 		21996CB3269626B60080AEEF /* GeoMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB2269626B60080AEEF /* GeoMessageListView.swift */; };
-		21996CB82696FBA80080AEEF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */; };
 		21C7C1C526A03BE10048A11F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 21C7C1C426A03BE10048A11F /* GoogleSignIn */; };
-		21C7C1D026A057450048A11F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1CF26A057450048A11F /* SignInViewModel.swift */; };
 		21C7C1D226A0751D0048A11F /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D126A0751D0048A11F /* GoogleAuth.swift */; };
 		21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D526A0A64D0048A11F /* CustomTabView.swift */; };
 		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
@@ -100,6 +103,9 @@
 		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		213DE9F52694AC9500A54262 /* GeoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessage.swift; sourceTree = "<group>"; };
 		213DE9F72694AD4300A54262 /* RepositoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServices.swift; sourceTree = "<group>"; };
+		2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		2152FB4926A57F3C0003C188 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2152FB4B26A582010003C188 /* MockAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationService.swift; sourceTree = "<group>"; };
 		21760DEF26A159FB00DFB4CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		21760DF426A16CAD00DFB4CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
@@ -108,8 +114,6 @@
 		21996CAE26961A890080AEEF /* GeoMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageView.swift; sourceTree = "<group>"; };
 		21996CB02696234E0080AEEF /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		21996CB2269626B60080AEEF /* GeoMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageListView.swift; sourceTree = "<group>"; };
-		21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		21C7C1CF26A057450048A11F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		21C7C1D126A0751D0048A11F /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 		21C7C1D526A0A64D0048A11F /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		21DF46B126A1E28600F9D98C /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		212432B026A42511004238E6 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				2152FB4926A57F3C0003C188 /* AppState.swift */,
 				2145630E26984717001210F5 /* Utils */,
 				21E20E382697573A00832118 /* UI */,
 				213DE9F926959B4400A54262 /* Services */,
@@ -277,8 +282,6 @@
 			children = (
 				21996CAA269615E10080AEEF /* GeoMessageListViewModel.swift */,
 				21996CAC269617EF0080AEEF /* GeoMessageViewModel.swift */,
-				21996CB72696FBA80080AEEF /* AuthenticationViewModel.swift */,
-				21C7C1CF26A057450048A11F /* SignInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -325,6 +328,14 @@
 				21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2152FB4E26A583B10003C188 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2152FB4B26A582010003C188 /* MockAuthenticationService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		21760DED26A1592E00DFB4CF /* Messaging */ = {
@@ -381,6 +392,8 @@
 		21E20E422697629900832118 /* SoulMessageTests */ = {
 			isa = PBXGroup;
 			children = (
+				2152FB4E26A583B10003C188 /* Mocks */,
+				2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */,
 				21E20E432697629900832118 /* SoulMessageTests.swift */,
 				21E20E452697629900832118 /* Info.plist */,
 			);
@@ -559,14 +572,13 @@
 				21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */,
 				21996CAB269615E10080AEEF /* GeoMessageListViewModel.swift in Sources */,
 				21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */,
-				21C7C1D026A057450048A11F /* SignInViewModel.swift in Sources */,
 				21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */,
 				21996CAD269617EF0080AEEF /* GeoMessageViewModel.swift in Sources */,
 				21C7C1D226A0751D0048A11F /* GoogleAuth.swift in Sources */,
-				21996CB82696FBA80080AEEF /* AuthenticationViewModel.swift in Sources */,
 				21996CB3269626B60080AEEF /* GeoMessageListView.swift in Sources */,
 				213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */,
 				21E20E3A2697576200832118 /* TabStyle.swift in Sources */,
+				2152FB4A26A57F3C0003C188 /* AppState.swift in Sources */,
 				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
 				213DE9BF26946A5700A54262 /* ContentView.swift in Sources */,
 				21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */,
@@ -590,6 +602,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2152FB4F26A583F20003C188 /* AppState.swift in Sources */,
+				2152FB4D26A5825B0003C188 /* AuthenticationServices.swift in Sources */,
+				2152FB4826A57E8A0003C188 /* AuthenticationTests.swift in Sources */,
+				2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */,
 				2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */,
 				21E20E442697629900832118 /* SoulMessageTests.swift in Sources */,
 			);
