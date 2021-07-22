@@ -10,7 +10,7 @@ import GoogleSignIn
 
 struct ProfileView: View {
     var body: some View {
-        VStack{
+        VStack {
             IntegratedSignOutController()
 
         }.frame(height: 100, alignment: .bottom)

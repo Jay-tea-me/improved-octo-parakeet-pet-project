@@ -11,12 +11,12 @@ struct CustomTabView: View {
     let tabBarItem: [String]
     let text: [Text]
     var content: [AnyView]
-    
+
     @State var selectedIndex = 0
-    
+
     var body: some View {
         VStack {
-            ZStack{
+            ZStack {
                 switch selectedIndex {
                 case selectedIndex:
                     NavigationView {
@@ -27,12 +27,12 @@ struct CustomTabView: View {
                     Text("Remaining")
                 }
             }
-            
+
             Spacer()
-            
+
             Divider()
                 .padding(.bottom, 8)
-            
+
             HStack {
                 ForEach(0..<tabBarItem.count) { num in
                     Button(action: {selectedIndex = num}, label: {
@@ -44,7 +44,7 @@ struct CustomTabView: View {
                         Spacer()
                     })
                 }
-                
+
             }
         }
     }
@@ -55,7 +55,7 @@ struct CustomTabView_Previews: PreviewProvider {
         CustomTabView(
         tabBarItem: [ "message", "globe", "person"],
         text: [Text("1"), Text("2"), Text("3")],
-            content:[AnyView(ProfileView()), AnyView(ProfileView()),AnyView(ProfileView())])
+            content: [AnyView(ProfileView()), AnyView(ProfileView()), AnyView(ProfileView())])
             .preferredColorScheme(.dark)
     }
 }

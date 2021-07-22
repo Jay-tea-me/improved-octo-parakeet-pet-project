@@ -11,19 +11,19 @@ import RealityKit
 
 struct ContentView: View {
     @EnvironmentObject var signInViewModel: SignInViewModel
-    
+
      var body: some View {
         SignInView()
             .fullScreenCover(isPresented: $signInViewModel.isSignedIn, content: {
                 LandingView()
             })
       }
-    func containedView()-> AnyView {
+    func containedView() -> AnyView {
         if signInViewModel.isSignedIn {
             return AnyView(LandingView())
         } else {
             return AnyView(SignInView())
-            
+
         }
     }
 }

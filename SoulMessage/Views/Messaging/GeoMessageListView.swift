@@ -13,31 +13,34 @@ struct GeoMessageListView: View {
 
     var body: some View {
 
-            ZStack{
+            ZStack {
                 Color(.black)
                     .edgesIgnoringSafeArea(.all)
-                VStack{
+                VStack {
 
                     List {
                         ForEach(geoMessageListViewModel.listGeoMessageViewModel) {message in
                             GeoMessageView(geoMessageViewModel: message)
                         }
-                    }.onAppear() {
+                    }.onAppear {
                         UITableView.appearance().backgroundColor = UIColor.clear
                         UITableViewCell.appearance().backgroundColor = UIColor.clear
                     }
                     .listStyle(InsetListStyle())
-                    
-                    HStack{
+
+                    HStack {
                         Spacer()
                         Button(action: {
                             showingForm = true
-                        }) {
-                            Circle()
-                                .fill(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        }) { Circle()
+                                .fill(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [Color.green, Color.blue]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing))
                                 .frame(height: 60, alignment: .bottomTrailing)
                                 .overlay(Image(systemName: "plus").foregroundColor(.white))
-          
+
                         }
                         .sheet(isPresented: $showingForm) {
                             FormView {(geoMessage) in
@@ -48,8 +51,8 @@ struct GeoMessageListView: View {
                     }
 
                 }
-                    
+
             }
-        
+
     }
 }

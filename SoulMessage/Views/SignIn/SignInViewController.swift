@@ -18,14 +18,14 @@ final class SignInViewController: UIViewController {
         let signInButton = GIDSignInButton()
         signInButton.colorScheme = .dark
         signInButton.addTarget(self, action: #selector(singInButtonPressed), for: .touchUpInside)
-        
+
         self.view.addSubview(signInButton)
     }
-    
+
     @objc func singInButtonPressed(sender: UIButton) {
-        let _ = authService.signIn()
+        _ = authService.signIn()
     }
-    
+
 }
 
 struct IntegratedSignInController: UIViewControllerRepresentable {
@@ -33,7 +33,7 @@ struct IntegratedSignInController: UIViewControllerRepresentable {
         let controller = SignInViewController()
         return controller
     }
-    
+
     func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {}
-    
+
 }

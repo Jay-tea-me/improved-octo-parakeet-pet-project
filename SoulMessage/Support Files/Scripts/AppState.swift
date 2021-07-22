@@ -18,14 +18,14 @@ final class AppState: ObservableObject {
     init(authenticationService: AuthenticationServices ) {
         self.authenticationService = authenticationService
         self.authenticationService.observeAuthChanges()
-            .map{ $0 != nil }
+            .map { $0 != nil }
             .assign(to: &$isSignedIn)
         checkSignInStatus()
     }
 
-    func checkSignInStatus(){
+    func checkSignInStatus() {
         authenticationService.currentUser()
-            .map{ $0 != nil }
+            .map { $0 != nil }
             .sink { isSignedIn in
                 self.isSignedIn = isSignedIn
             }

@@ -59,13 +59,13 @@ extension XCTestCase {
 
 class AuthenticationTests: XCTestCase {
     var appState: AppState!
-    var mockAuthService: MockAuthenticationService! 
-    
+    var mockAuthService: MockAuthenticationService!
+
     override func setUp() {
         mockAuthService = MockAuthenticationService()
         appState = AppState(authenticationService: mockAuthService)
     }
-    
+
     func testSignOutStateChangesToSignInStateWhenServerDetectsUserSignIn() throws {
         let changedStatePub = appState.$isSignedIn
             .collect(1)
@@ -77,46 +77,46 @@ class AuthenticationTests: XCTestCase {
         XCTAssertEqual(changedState.count, 1)
         XCTAssertEqual(changedState.first, true)
     }
-    
+
     func testSignInStateChangesToSignOutStateWhenServerDetectsUserSignOut() throws {
         let changedStatePub = appState.$isSignedIn
             .collect(1)
             .first()
-        
-        //sign in
+
+        // sign in
         mockAuthService.serverStateSub.send(User())
         var changedState = try `await`(changedStatePub)
-        
-        //sign out
+
+        // sign out
         mockAuthService.serverStateSub.send(nil)
         changedState = try `await`(changedStatePub)
 
         XCTAssertEqual(changedState.count, 1)
         XCTAssertEqual(changedState.last, false)
     }
-    
+
     func testWhenStartingUpAppAndInSignedStateOnServerThenAppIsSignedIn() throws {
         let changedStatePub = appState.$isSignedIn
             .collect(1)
             .first()
-        
+
         mockAuthService.currentUserSub.send(User())
         let changedState = try `await`(changedStatePub)
-        
+
         XCTAssertEqual(changedState.count, 1)
         XCTAssertEqual(changedState.first, true)
     }
-    
+
     func testWhenStartingUpAppAndInSignedStateOutServerThenAppIsSignedOut() throws {
         let changedStatePub = appState.$isSignedIn
             .collect(1)
             .first()
-        
+
         mockAuthService.currentUserSub.send(nil)
         let changedState = try `await`(changedStatePub)
-        
+
         XCTAssertEqual(changedState.count, 1)
         XCTAssertEqual(changedState.first, false)
     }
-        
+
 }

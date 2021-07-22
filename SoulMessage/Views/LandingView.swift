@@ -14,8 +14,10 @@ struct LandingView: View {
         CustomTabView(
             tabBarItem: [ "message", "globe", "person"],
             text: [Text("Messages"), Text("Map"), Text("Profile")],
-            content:[AnyView(GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())), AnyView(MapView(coordinate: CLLocationCoordinate2D(latitude: 28.076_783, longitude: -26.198_223))),
-                     AnyView(ProfileView())]
+            content: [
+                AnyView(GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())),
+                AnyView(MapView(coordinate: CLLocationCoordinate2D(latitude: 28.076_783, longitude: -26.198_223))),
+                AnyView(ProfileView())]
         )
     }
 }
@@ -27,5 +29,3 @@ struct LandingView_Previews: PreviewProvider {
 
     }
 }
-
-

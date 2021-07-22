@@ -11,7 +11,7 @@ final class GeoMessageViewModel: ObservableObject, Identifiable {
 
     @Published var geoMessage: GeoMessage
     var id = ""
-    
+
     private var cancellables: Set<AnyCancellable> = []
     init(geoMessage: GeoMessage) {
         self.geoMessage = geoMessage

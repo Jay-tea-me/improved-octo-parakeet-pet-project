@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct GeoMessageView: View {
-    
+
     var geoMessageViewModel: GeoMessageViewModel
-    
+
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
             .fill(Color.gray)
             .frame(height: 200)
-            .overlay(ZStack{
-                VStack{
+            .overlay(ZStack {
+                VStack {
                     Text(geoMessageViewModel.geoMessage.body)
                         .font(.title)
                         .foregroundColor(.white)
@@ -37,11 +37,10 @@ struct GeoMessageView: View {
     }
 }
 
-
-//struct GeoMessage_Previews: PreviewProvider {
+// struct GeoMessage_Previews: PreviewProvider {
 //    static var previews: some View {
 //        GeoMessageView()
 //            .preferredColorScheme(.dark)
 //            .previewLayout(.sizeThatFits)
 //    }
-//}
+// }

@@ -10,7 +10,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
 
-final class GeoMessageRepository:  ObservableObject, RepositoryServices {
+final class GeoMessageRepository: ObservableObject, RepositoryServices {
 
     private let path = "geoMessages"
     
@@ -24,7 +24,7 @@ final class GeoMessageRepository:  ObservableObject, RepositoryServices {
     func get() {
         store.collection(path).addSnapshotListener { (snapshot, error) in
             if let error = error {
-                print (error)
+                print(error)
                 return
             }
             self.geoMessages = snapshot?.documents.compactMap {

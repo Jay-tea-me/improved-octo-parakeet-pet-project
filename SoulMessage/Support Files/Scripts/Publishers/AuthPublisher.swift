@@ -27,7 +27,7 @@ extension Publishers {
         init(subscriber: S) {
             self.subscriber = subscriber
             print("subscribing to Auth Sub")
-            handler = Auth.auth().addStateDidChangeListener{ (auth, user) in
+            handler = Auth.auth().addStateDidChangeListener { (_, user) in
                 _ = subscriber.receive(user)
             }
         }

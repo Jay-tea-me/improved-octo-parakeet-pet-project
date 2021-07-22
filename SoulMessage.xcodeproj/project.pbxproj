@@ -51,6 +51,7 @@
 		21C7C1C526A03BE10048A11F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 21C7C1C426A03BE10048A11F /* GoogleSignIn */; };
 		21C7C1D226A0751D0048A11F /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D126A0751D0048A11F /* GoogleAuth.swift */; };
 		21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D526A0A64D0048A11F /* CustomTabView.swift */; };
+		21D1C7C726A9B51D001D9BDC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 21D1C7C626A9B51D001D9BDC /* .swiftlint.yml */; };
 		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
 		21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B426A1F76B00F9D98C /* FirebaseAuth */; };
 		21DF46B726A1F76B00F9D98C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B626A1F76B00F9D98C /* FirebaseFirestore */; };
@@ -110,6 +111,7 @@
 		21996CB2269626B60080AEEF /* GeoMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageListView.swift; sourceTree = "<group>"; };
 		21C7C1D126A0751D0048A11F /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 		21C7C1D526A0A64D0048A11F /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		21D1C7C626A9B51D001D9BDC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		21DF46B126A1E28600F9D98C /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		21E20DFC26970EBE00832118 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		2145630B269828C9001210F5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				21D1C7C626A9B51D001D9BDC /* .swiftlint.yml */,
 				212432B026A42511004238E6 /* Scripts */,
 				212432AF26A4250C004238E6 /* Resources */,
 				213DE9C026946A5800A54262 /* Assets.xcassets */,
@@ -392,6 +395,7 @@
 				213DE9B526946A5700A54262 /* Sources */,
 				213DE9B626946A5700A54262 /* Frameworks */,
 				213DE9B726946A5700A54262 /* Resources */,
+				21D1C7C526A9B437001D9BDC /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -486,6 +490,7 @@
 				213DE9E826946E0600A54262 /* GoogleService-Info.plist in Resources */,
 				212432C826A42580004238E6 /* Roboto-BlackItalic.ttf in Resources */,
 				212432CA26A42580004238E6 /* Roboto-Thin.ttf in Resources */,
+				21D1C7C726A9B51D001D9BDC /* .swiftlint.yml in Resources */,
 				212432C026A42580004238E6 /* Roboto-Light.ttf in Resources */,
 				212432C326A42580004238E6 /* Roboto-ThinItalic.ttf in Resources */,
 				212432CB26A42580004238E6 /* Roboto-Black.ttf in Resources */,
@@ -504,6 +509,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21D1C7C526A9B437001D9BDC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		213DE9B526946A5700A54262 /* Sources */ = {

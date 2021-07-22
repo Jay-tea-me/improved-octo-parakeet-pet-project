@@ -17,7 +17,6 @@ struct MapView: View {
             .onAppear {
                 setRegion(coordinate)
             }.ignoresSafeArea(edges: .all)
-            
 
     }
 

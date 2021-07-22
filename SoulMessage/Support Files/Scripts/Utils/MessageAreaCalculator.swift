@@ -30,7 +30,7 @@ struct MessageAreaCalculator {
 
     var upperBoundLongitude: Double { clampCoordinates(longitude + range, boundedBy: longitudeBounds) }
     
-    private func clampCoordinates(_ oldValue: Double,boundedBy bounds: Double) -> Double {
+    private func clampCoordinates(_ oldValue: Double, boundedBy bounds: Double) -> Double {
         if oldValue == 0 {
             return oldValue
         }
@@ -45,6 +45,5 @@ struct MessageAreaCalculator {
         }
         return oldValue
     }
-    
     
 }

@@ -17,4 +17,3 @@ protocol AuthenticationServices {
     func currentUser() -> AnyPublisher <User?, Never>
     func observeAuthChanges() -> AnyPublisher <User?, Never>
 }
-

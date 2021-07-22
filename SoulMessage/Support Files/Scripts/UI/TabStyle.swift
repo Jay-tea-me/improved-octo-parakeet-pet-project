@@ -20,16 +20,12 @@ extension UITabBarController {
         
         tabBar.standardAppearance = standardAppearance
     }
-
 }
 
 extension UITabBar {
     static func setTransparentTabber() {
-        
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().tintColor = .green
     }
-    
 }
-

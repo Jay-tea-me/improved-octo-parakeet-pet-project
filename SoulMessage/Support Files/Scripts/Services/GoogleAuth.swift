@@ -10,9 +10,8 @@ import GoogleSignIn
 import FirebaseAuth
 import Firebase
 
+final class GoogleAuth: AuthenticationServices {
 
-final class GoogleAuth: AuthenticationServices  {
-    
     static private var signInConfig: GIDConfiguration!
     
     static func configure() {
@@ -22,7 +21,10 @@ final class GoogleAuth: AuthenticationServices  {
 
     func signIn() -> AnyPublisher<User, Error> {
         return Future<User, Error> { promise in
-            GIDSignIn.sharedInstance.signIn(with: GoogleAuth.signInConfig, presenting: (UIApplication.shared.windows.first?.rootViewController)!) {user, error in
+            GIDSignIn.sharedInstance.signIn(
+                with: GoogleAuth.signInConfig,
+                presenting: (UIApplication.shared.windows.first?.rootViewController)!
+            ) { user, error in
                 if let error = error {
                     return promise(.failure(error))
                 } else if let GIDuser = user {
@@ -49,10 +51,10 @@ final class GoogleAuth: AuthenticationServices  {
         
         Auth.auth().signIn(with: credential) { authResult, error in
             if let error = error {
-                completion (.failure(error))
+                completion(.failure(error))
                 
-            } else if let user = authResult?.user{
-                completion (.success(user))
+            } else if let user = authResult?.user {
+                completion(.success(user))
             }
         }
     }
@@ -68,15 +70,13 @@ final class GoogleAuth: AuthenticationServices  {
                 try Auth.auth().signOut()
                 return promise(.success(()))
             } catch let signOutError as NSError {
-                print (signOutError.localizedDescription)
+                print(signOutError.localizedDescription)
                 return promise(.failure(signOutError))
             }
         }.eraseToAnyPublisher()
     }
     
-    func observeAuthChanges()-> AnyPublisher <User?, Never> {
+    func observeAuthChanges() -> AnyPublisher<User?, Never> {
         Publishers.AuthPublisher().eraseToAnyPublisher()
     }
 }
-        
-    
