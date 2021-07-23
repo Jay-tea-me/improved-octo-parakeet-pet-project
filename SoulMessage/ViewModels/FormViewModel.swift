@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension FormViewController {
+    class ViewModel {
+        // todo
+    }
+}
