@@ -30,7 +30,7 @@ struct SignInView: View {
                     Spacer()
 
                     VStack(alignment: .center, spacing: 0, content: {
-                        IntegratedSignInController()
+                        IntegratedSignInViewController()
                             .contentShape(Rectangle())
 
                     })
