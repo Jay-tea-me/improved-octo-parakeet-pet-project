@@ -26,5 +26,5 @@ final class GeoMessageListViewModel: ObservableObject {
     func add(_ geoMessage: GeoMessage) {
         geoMessageRepository.add(geoMessage)
     }
-
+                                                                        
 }

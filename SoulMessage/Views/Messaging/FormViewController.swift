@@ -15,25 +15,38 @@ class FormViewController: UIViewController {
 
     private var locationLabel: UILabel!
     private var outputLabel: UILabel!
+    private var phrase1Label: UILabel!
+    private var phrase2Label: UILabel!
 //    private var carveButton: UIButton!
     private var stackView: UIStackView!
+    private(set) var viewModel: ViewModel
 
-    private let phrase1Data = ["A", "B", "C", "D"]
-    private let phrase2Data = ["0", "1", "2", "3"]
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
-    private var phrase1 = "A"
-    private var phrase2 = "0"
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        loadPhrase1Picker()
-        loadPhrase2Picker()
-        loadOutputLabel()
-        loadLocationLabel()
+        phrase1Picker = loadPicker(withTag: 1)
+        phrase2Picker = loadPicker(withTag: 2)
+        phrase1Label = loadPickerLabel(text: viewModel.phrase1LabelText)
+        phrase2Label = loadPickerLabel(text: viewModel.phrase2LabelText)
+
+        outputLabel = loadDetailLabel(with: viewModel.outputMessage)
+        locationLabel = loadDetailLabel(with: viewModel.coordinates)
+        
         loadStackView()
 
+        stackView.addArrangedSubview(phrase1Label)
         stackView.addArrangedSubview(phrase1Picker)
+        stackView.addArrangedSubview(phrase2Label)
         stackView.addArrangedSubview(phrase2Picker)
         stackView.addArrangedSubview(outputLabel)
         stackView.addArrangedSubview(locationLabel)
@@ -44,29 +57,29 @@ class FormViewController: UIViewController {
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
 
     }
-
-    private func loadPhrase1Picker() {
-        phrase1Picker = UIPickerView()
-        phrase1Picker.dataSource = self
-        phrase1Picker.delegate = self
-        phrase1Picker.tag = 1
+    
+    public func onCarveButtonPressed() -> GeoMessage {
+        return viewModel.geoMessage
     }
 
-    private func loadPhrase2Picker() {
-        phrase2Picker = UIPickerView()
-        phrase2Picker.dataSource = self
-        phrase2Picker.delegate = self
-        phrase2Picker.tag = 2
+    private func loadPicker(withTag tag: Int) -> UIPickerView {
+        let picker = UIPickerView()
+        picker.dataSource = self
+        picker.delegate = self
+        picker.tag = tag
+        return picker
     }
 
-    private func loadLocationLabel() {
-        locationLabel = UILabel()
-        locationLabel.text = "COORDINATES: (0, 0)"
+    private func loadDetailLabel(with text: String) -> UILabel {
+        let label = UILabel()
+        label.text = text
+        return label
     }
 
-    private func loadOutputLabel() {
-        outputLabel = UILabel()
-        outputLabel.text = "MESSAGE: A 0"
+    private func loadPickerLabel(text: String) -> UILabel {
+        let label = loadDetailLabel(with: text)
+        label.font = .boldSystemFont(ofSize: 18)
+        return label
     }
 
     private func loadStackView() {
@@ -82,15 +95,15 @@ class FormViewController: UIViewController {
     }
 }
 
-//MARK: - PICKER DATASOURCE AND DELEGATE METHODS
+// MARK: - PICKER DATASOURCE AND DELEGATE METHODS
 extension FormViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     // number of rows
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView.tag {
         case 1:
-            return phrase1Data.count
+            return viewModel.phrase1Data.count
         case 2:
-            return phrase2Data.count
+            return viewModel.phrase2Data.count
         default:
             return 1
         }
@@ -105,9 +118,9 @@ extension FormViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 1:
-            return phrase1Data[row]
+            return viewModel.phrase1Data[row]
         case 2:
-            return phrase2Data[row]
+            return viewModel.phrase2Data[row]
         default:
             return ""
         }
@@ -116,29 +129,39 @@ extension FormViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch pickerView.tag {
         case 1:
-            phrase1 = phrase1Data[row]
+            viewModel.phrase1 = viewModel.phrase1Data[row]
         case 2:
-            phrase2 = phrase2Data[row]
+            viewModel.phrase2 = viewModel.phrase2Data[row]
         default:
             break
         }
-        outputLabel.text = "MESSAGE: \(phrase1) \(phrase2)"
+        outputLabel.text = viewModel.outputMessage
+        viewModel.updateGeoMessage()
     }
 }
 
 struct IntegratedFormViewController: UIViewControllerRepresentable {
+
+    private var viewModel: FormViewController.ViewModel
+
+    init(viewModel: FormViewController.ViewModel) {
+        self.viewModel = viewModel
+    }
+
     func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedFormViewController>) -> FormViewController {
-        let controller = FormViewController()
+        let controller = FormViewController(viewModel: viewModel)
         return controller
     }
 
     func updateUIViewController(_ uiViewController: FormViewController, context: UIViewControllerRepresentableContext<IntegratedFormViewController>) {}
-
 }
+
 struct FormTestView: View {
     var body: some View {
         NavigationView {
-            IntegratedFormViewController()
+            VStack {
+                IntegratedFormViewController(viewModel: FormViewController.ViewModel())
+            }.navigationTitle("NEW MESSAGE")
         }
     }
 }
