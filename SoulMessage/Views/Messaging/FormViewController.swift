@@ -30,7 +30,6 @@ class FormViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -41,7 +40,7 @@ class FormViewController: UIViewController {
 
         outputLabel = loadDetailLabel(with: viewModel.outputMessage)
         locationLabel = loadDetailLabel(with: viewModel.coordinates)
-        
+
         loadStackView()
 
         stackView.addArrangedSubview(phrase1Label)
@@ -57,7 +56,7 @@ class FormViewController: UIViewController {
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
 
     }
-    
+
     public func onCarveButtonPressed() -> GeoMessage {
         return viewModel.geoMessage
     }
@@ -147,7 +146,7 @@ struct IntegratedFormViewController: UIViewControllerRepresentable {
     init(viewModel: FormViewController.ViewModel) {
         self.viewModel = viewModel
     }
-
+    // swiftlint:disable line_length
     func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedFormViewController>) -> FormViewController {
         let controller = FormViewController(viewModel: viewModel)
         return controller

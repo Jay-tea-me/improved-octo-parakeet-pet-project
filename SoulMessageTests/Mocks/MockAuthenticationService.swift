@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-
+// swiftlint:disable identifier_name
 struct User {
     var id: String?
 }

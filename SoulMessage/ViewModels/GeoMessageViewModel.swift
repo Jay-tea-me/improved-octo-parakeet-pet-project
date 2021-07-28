@@ -6,7 +6,7 @@
 //
 
 import Combine
-
+// swiftlint:disable identifier_name
 final class GeoMessageViewModel: ObservableObject, Identifiable {
 
     @Published var geoMessage: GeoMessage

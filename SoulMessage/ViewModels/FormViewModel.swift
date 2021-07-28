@@ -31,7 +31,7 @@ extension FormViewController {
                 longitude: Double(0)
             )
         }
-        
+
         public func updateGeoMessage() {
             geoMessage = GeoMessage(
                 sender: "JAY",

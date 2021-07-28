@@ -6,7 +6,7 @@
 //
 
 import FirebaseFirestoreSwift
-
+// swiftlint:disable identifier_name
 struct GeoMessage: Identifiable, Codable {
     @DocumentID var id: String?
     var sender: String
