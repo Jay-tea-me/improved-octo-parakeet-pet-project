@@ -37,6 +37,7 @@
 		2152FB4F26A583F20003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
 		21715DA226B1623C006F883B /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DA126B1623C006F883B /* CLLocationManager.swift */; };
 		21715DA426B19A5A006F883B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DA326B19A5A006F883B /* MapViewModel.swift */; };
+		21715DAE26B1DBD0006F883B /* MessageAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DAD26B1DBD0006F883B /* MessageAnnotation.swift */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
@@ -106,6 +107,7 @@
 		2152FB4B26A582010003C188 /* MockAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationService.swift; sourceTree = "<group>"; };
 		21715DA126B1623C006F883B /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
 		21715DA326B19A5A006F883B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		21715DAD26B1DBD0006F883B /* MessageAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAnnotation.swift; sourceTree = "<group>"; };
 		21760DEF26A159FB00DFB4CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		21760DF426A16CAD00DFB4CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				213DE9F52694AC9500A54262 /* GeoMessage.swift */,
+				21715DAD26B1DBD0006F883B /* MessageAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 			files = (
 				21E20E37269727E200832118 /* AuthPublisher.swift in Sources */,
 				21996CB12696234E0080AEEF /* FormView.swift in Sources */,
+				21715DAE26B1DBD0006F883B /* MessageAnnotation.swift in Sources */,
 				213DE9F026946FDA00A54262 /* AuthenticationServices.swift in Sources */,
 				21996CAF26961A890080AEEF /* GeoMessageView.swift in Sources */,
 				21E20DFD26970EBE00832118 /* LandingView.swift in Sources */,

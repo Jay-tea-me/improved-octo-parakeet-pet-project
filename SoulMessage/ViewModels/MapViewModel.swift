@@ -26,6 +26,13 @@ extension MapView {
             CLLocationManager.publishLocation()
                 .map { self.getRegion($0, distance: 50) }
                 .assign(to: &$region)
+
+            geoMessageRepository.$geoMessages
+                .map { geoMessage in
+                    geoMessage.map(GeoMessageViewModel.init)
+                }
+                .assign(to: \.listGeoMessageViewModel, on: self)
+                .store(in: &cancellables)
         }
 
         private func getRegion(_ coordinates: CLLocationCoordinate2D, distance: Double) -> MKCoordinateRegion {

@@ -7,23 +7,20 @@
 
 import SwiftUI
 import MapKit
+import Combine
 
 struct MapView: View {
-//    var coordinate: CLLocationCoordinate2D
-//    @State private var region = MKCoordinateRegion()
-    @ObservedObject var viewModel = ViewModel()
+    @ObservedObject private var viewModel = ViewModel()
 
     var body: some View {
-        Map(coordinateRegion: $viewModel.region)
-            .ignoresSafeArea(edges: .all)
+        Map(coordinateRegion: $viewModel.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: nil, annotationItems: $viewModel.listGeoMessageViewModel.wrappedValue) { geomessageVM in
+            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: geomessageVM.geoMessage.latitude, longitude: geomessageVM.geoMessage.latitude)) {
+                Image(systemName: "Message")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+            }
+        }
     }
-//
-//    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-//        region = MKCoordinateRegion(
-//            center: coordinate,
-//            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-//        )
-//    }
 }
 
 struct MapView_Previews: PreviewProvider {
