@@ -51,6 +51,7 @@ struct MessageAreaCalculator {
     }
 
     // Methods used to calculate map area
+    
     var angularDistance: Double {
         distance / 2.0 / earthCircumference
     }

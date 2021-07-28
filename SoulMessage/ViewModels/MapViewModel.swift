@@ -19,6 +19,8 @@ extension MapView {
 
         private var cancellables: Set<AnyCancellable> = []
 
+        private let distance = 1000
+
         init() {
             print("Is Maps working")
             CLLocationManager.publishLocation()
@@ -27,21 +29,15 @@ extension MapView {
         }
 
         private func getRegion(_ coordinates: CLLocationCoordinate2D, distance: Double) -> MKCoordinateRegion {
+            print("getting region")
+            let areaCalculator = MessageAreaCalculator.init(
+                distance: distance, latitude: coordinates.latitude, longitude: coordinates.longitude)
 
-            let distance = distance / 2.0
-            let earthCircumference = 40075.0
-            let oneDegreeOfLatitudeInMeters = 111.32 * 1000.0
-            let angularDistance = distance / earthCircumference
-
-            let latitudeDelta = distance / oneDegreeOfLatitudeInMeters
-
-            let latitude = coordinates.latitude
-            let longitudeDelta = abs(atan2(
-                                            sin(angularDistance) * cos(latitude),
-                                            cos(angularDistance) - sin(latitude) * sin(latitude)))
             return MKCoordinateRegion(
                 center: coordinates,
-                span: MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta)
+                span: MKCoordinateSpan(
+                    latitudeDelta: areaCalculator.latitudeDelta,
+                    longitudeDelta: areaCalculator.longitudeDelta)
             )
         }
 

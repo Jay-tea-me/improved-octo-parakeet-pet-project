@@ -48,6 +48,12 @@ extension Publishers {
             func cancel() {
                 locationManager.stopUpdatingLocation()
             }
+
+            func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+                for location in locations {
+                    _ = subscriber?.receive(location.coordinate)
+                }
+            }
         }
     }
 }
