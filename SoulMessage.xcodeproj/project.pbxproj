@@ -60,7 +60,6 @@
 		21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
-		21E20E3A2697576200832118 /* TabStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E392697576200832118 /* TabStyle.swift */; };
 		21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
 		21E20E442697629900832118 /* SoulMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E432697629900832118 /* SoulMessageTests.swift */; };
 /* End PBXBuildFile section */
@@ -119,7 +118,6 @@
 		21DF46B126A1E28600F9D98C /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		21E20DFC26970EBE00832118 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
-		21E20E392697576200832118 /* TabStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStyle.swift; sourceTree = "<group>"; };
 		21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAreaCalculator.swift; sourceTree = "<group>"; };
 		21E20E412697629900832118 /* SoulMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E20E432697629900832118 /* SoulMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageTests.swift; sourceTree = "<group>"; };
@@ -173,9 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				2152FB4926A57F3C0003C188 /* AppState.swift */,
-				2145630E26984717001210F5 /* Utils */,
-				21E20E382697573A00832118 /* UI */,
-				213DE9F926959B4400A54262 /* Services */,
+				2145630E26984717001210F5 /* Map */,
+				213DE9F926959B4400A54262 /* Authentication */,
 				21E20E35269727CB00832118 /* Publishers */,
 				213DE9EC26946E3700A54262 /* Repositories */,
 			);
@@ -279,19 +276,19 @@
 		213DE9EC26946E3700A54262 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				213DE9F72694AD4300A54262 /* RepositoryServices.swift */,
 				21996CA8269613C50080AEEF /* GeoMessageRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		213DE9F926959B4400A54262 /* Services */ = {
+		213DE9F926959B4400A54262 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */,
-				213DE9F72694AD4300A54262 /* RepositoryServices.swift */,
 				21C7C1D126A0751D0048A11F /* GoogleAuth.swift */,
 			);
-			path = Services;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		2145630B269828C9001210F5 /* Support Files */ = {
@@ -305,12 +302,12 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		2145630E26984717001210F5 /* Utils */ = {
+		2145630E26984717001210F5 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */,
 			);
-			path = Utils;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		2152FB4E26A583B10003C188 /* Mocks */ = {
@@ -363,14 +360,6 @@
 				21E20E36269727E200832118 /* AuthPublisher.swift */,
 			);
 			path = Publishers;
-			sourceTree = "<group>";
-		};
-		21E20E382697573A00832118 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				21E20E392697576200832118 /* TabStyle.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		21E20E422697629900832118 /* SoulMessageTests */ = {
@@ -557,7 +546,6 @@
 				21996CB3269626B60080AEEF /* GeoMessageListView.swift in Sources */,
 				213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */,
 				219E8DA826AAADC3004D7BA7 /* FormViewController.swift in Sources */,
-				21E20E3A2697576200832118 /* TabStyle.swift in Sources */,
 				2152FB4A26A57F3C0003C188 /* AppState.swift in Sources */,
 				213DE9F42694709D00A54262 /* ProfileView.swift in Sources */,
 				21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */,
