@@ -14,71 +14,74 @@ class SoulMessageTests: XCTestCase {
     var currentLongitude: Double = 1
     override func setUp() {
 
-        messageAreaCalculator = MessageAreaCalculator(range: 1, latitude: currentLatitude, longitude: currentLongitude)
+        messageAreaCalculator = MessageAreaCalculator(
+            distance: 1000, latitude: currentLatitude, longitude: currentLongitude)
     }
 
     func testLatitudeLowerBoundIsCurrentLatitudeMinusRange() {
         let actualLowerBoundLatitude = messageAreaCalculator.lowerBoundLatitude
-        let expectedLowerBoundLatitude = currentLatitude - messageAreaCalculator.range
+        let expectedLowerBoundLatitude = currentLatitude - messageAreaCalculator.latitudeDelta
 
         XCTAssertEqual(actualLowerBoundLatitude, expectedLowerBoundLatitude)
     }
 
     func testLatitudeUpperBoundIsCurrentLocationPlusRange() {
         let actualUpperBoundLatitude = messageAreaCalculator.upperBoundLatitude
-        let expectedUpperBoundLatitude = currentLatitude + messageAreaCalculator.range
+        let expectedUpperBoundLatitude = currentLatitude + messageAreaCalculator.latitudeDelta
 
         XCTAssertEqual(actualUpperBoundLatitude, expectedUpperBoundLatitude)
     }
 
     func testLongitudeLowerBoundIsCurrentLocationMinusRange() {
         let actualLowerBoundLongitude = messageAreaCalculator.lowerBoundLongitude
-        let expectedLowerBoundLongitude = currentLongitude - messageAreaCalculator.range
+        let expectedLowerBoundLongitude = currentLongitude - messageAreaCalculator.longitudeDelta
 
         XCTAssertEqual(actualLowerBoundLongitude, expectedLowerBoundLongitude)
     }
 
     func testLongitudeUpperBoundIsCurrentLocationPlusRange() {
         let actualUpperBoundLongitude = messageAreaCalculator.upperBoundLongitude
-        let expectedUpperBoundLongitude = currentLongitude + messageAreaCalculator.range
+        let expectedUpperBoundLongitude = currentLongitude + messageAreaCalculator.longitudeDelta
 
         XCTAssertEqual(actualUpperBoundLongitude, expectedUpperBoundLongitude)
     }
 
     func testLongitudeStaysInBoundsWithCurrentLongitudeOf85() {
-        messageAreaCalculator.longitude = 85
+        messageAreaCalculator.longitude = messageAreaCalculator.longitudeBounds
 
         let actualUpperBoundLongitude = messageAreaCalculator.upperBoundLongitude
-        let expectedUpperBoundLongitude: Double = -84
+        let minLongitude: Double = -1 * messageAreaCalculator.longitude
+        let maxLongitude: Double = messageAreaCalculator.longitude
 
-        XCTAssertEqual(actualUpperBoundLongitude, expectedUpperBoundLongitude)
+        XCTAssertTrue(actualUpperBoundLongitude > minLongitude)
+        XCTAssertTrue(actualUpperBoundLongitude < maxLongitude)
     }
 
     func testLongitudeStaysInBoundsWithCurrentLongitudeOf0() {
         messageAreaCalculator.longitude = 0
 
         let actualLowerBoundLongitude = messageAreaCalculator.lowerBoundLongitude
-        let expectedLowerBoundLongitude: Double = -1
 
-        XCTAssertEqual(actualLowerBoundLongitude, expectedLowerBoundLongitude)
+        XCTAssertTrue(actualLowerBoundLongitude < messageAreaCalculator.longitude)
     }
 
     func testLatitudeStaysInBoundsWithCurrentLatitudeOf85() {
-        messageAreaCalculator.latitude = 180
+        messageAreaCalculator.latitude = messageAreaCalculator.latitudeBounds
 
         let actualUpperBoundLatitude = messageAreaCalculator.upperBoundLatitude
-        let expectedUpperBoundLatitude: Double = -179
+        let minLatitude: Double = -messageAreaCalculator.latitudeBounds
+        let maxLatitude: Double = messageAreaCalculator.latitudeBounds
 
-        XCTAssertEqual(actualUpperBoundLatitude, expectedUpperBoundLatitude)
+        XCTAssertTrue(actualUpperBoundLatitude > minLatitude)
+        XCTAssertTrue(actualUpperBoundLatitude < maxLatitude)
     }
 
     func testLatitudeStaysInBoundsWithCurrentLatitudeOf0() {
         messageAreaCalculator.latitude = 0
 
         let actualLowerBoundLatitude = messageAreaCalculator.lowerBoundLatitude
-        let expectedLowerBoundLatitude: Double = -1
-
-        XCTAssertEqual(actualLowerBoundLatitude, expectedLowerBoundLatitude)
+        
+        XCTAssertTrue(actualLowerBoundLatitude < messageAreaCalculator.latitude)
     }
 
 }

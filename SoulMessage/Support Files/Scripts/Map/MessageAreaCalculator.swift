@@ -13,22 +13,26 @@ import CoreLocation
 // Longitude: -180 to +180
 
 struct MessageAreaCalculator {
+    let earthCircumference: Double = 40075.0
+    let oneDegreeOfLatitudeInMeters: Double = 111.32 * 1000.0
+
     let latitudeBounds: Double = 180
     let longitudeBounds: Double = 85
-    
-    var range: Double
-    
-    var latitude: Double
-    
-    var longitude: Double
-    
-    var lowerBoundLatitude: Double { clampCoordinates(latitude - range, boundedBy: latitudeBounds) }
-    
-    var upperBoundLatitude: Double { clampCoordinates(latitude + range, boundedBy: latitudeBounds) }
-    
-    var lowerBoundLongitude: Double { clampCoordinates(longitude - range, boundedBy: longitudeBounds) }
 
-    var upperBoundLongitude: Double { clampCoordinates(longitude + range, boundedBy: longitudeBounds) }
+    let distance: Double
+
+    var latitude: Double
+    var longitude: Double
+
+    // Methods used for filtering messages from the repository
+
+    var lowerBoundLatitude: Double { clampCoordinates(latitude - latitudeDelta, boundedBy: latitudeBounds) }
+    
+    var upperBoundLatitude: Double { clampCoordinates(latitude + latitudeDelta, boundedBy: latitudeBounds) }
+    
+    var lowerBoundLongitude: Double { clampCoordinates(longitude - longitudeDelta, boundedBy: longitudeBounds) }
+
+    var upperBoundLongitude: Double { clampCoordinates(longitude + longitudeDelta, boundedBy: longitudeBounds) }
     
     private func clampCoordinates(_ oldValue: Double, boundedBy bounds: Double) -> Double {
         if oldValue == 0 {
@@ -45,5 +49,18 @@ struct MessageAreaCalculator {
         }
         return oldValue
     }
-    
+
+    // Methods used to calculate map area
+    var angularDistance: Double {
+        distance / 2.0 / earthCircumference
+    }
+    var longitudeDelta: Double {
+        return  abs(atan2(
+                        sin(angularDistance) * cos(latitude),
+                        cos(angularDistance) - sin(latitude) * sin(latitude)))
+    }
+
+    var latitudeDelta: Double {
+        return distance / 2.0 / oneDegreeOfLatitudeInMeters
+    }
 }
