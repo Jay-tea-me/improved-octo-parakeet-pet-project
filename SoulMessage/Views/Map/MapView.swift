@@ -13,7 +13,12 @@ struct MapView: View {
     @ObservedObject private var viewModel = ViewModel()
 
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, interactionModes: .all, showsUserLocation: true, userTrackingMode: nil, annotationItems: $viewModel.listGeoMessageViewModel.wrappedValue) { geomessageVM in
+        Map(
+            coordinateRegion: $viewModel.region,
+            interactionModes: .all,
+            showsUserLocation: true,
+            userTrackingMode: nil,
+            annotationItems: $viewModel.listGeoMessageViewModel.wrappedValue) { geomessageVM in
             MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: geomessageVM.geoMessage.latitude, longitude: geomessageVM.geoMessage.latitude)) {
                 Image(systemName: "Message")
                     .resizable()

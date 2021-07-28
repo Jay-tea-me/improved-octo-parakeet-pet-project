@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+import MapKit
 
 extension FormViewController {
     class ViewModel: ObservableObject {
@@ -18,36 +20,36 @@ extension FormViewController {
 
         internal var phrase1: String = ""
         internal var phrase2: String = ""
-        internal var latitude = 0
-        internal var longitude = 0
+        @Published internal var coordinates2D: CLLocationCoordinate2D
 
         init() {
+            coordinates2D = CLLocationCoordinate2D(latitude: 0, longitude: 0)
             phrase1 = phrase1Data[0]
             phrase2 = phrase2Data[0]
             geoMessage = GeoMessage(
                 sender: "JAY",
                 body: "",
-                latitude: Double(0),
-                longitude: Double(0)
+                latitude: 0,
+                longitude: 0
             )
+            CLLocationManager.publishLocation()
+                .map { $0 }
+                .assign(to: &$coordinates2D)
+
         }
 
         public func updateGeoMessage() {
             geoMessage = GeoMessage(
                 sender: "JAY",
                 body: "\(phrase1) \(phrase2)",
-                latitude: Double(latitude),
-                longitude: Double(longitude),
+                latitude: Double(coordinates2D.latitude),
+                longitude: Double(coordinates2D.longitude),
                 dated: Date().timeIntervalSince1970
             )
         }
 
         public var outputMessage: String {
             "MESSAGE: \(phrase1) \(phrase2)"
-        }
-
-        public var coordinates: String {
-            "COORDINATES: (\(latitude), \(longitude))"
         }
     }
 }
