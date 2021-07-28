@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// swiftlint:disable multiple_closures_with_trailing_closure
 struct GeoMessageListView: View {
     @ObservedObject var geoMessageListViewModel: GeoMessageListViewModel = GeoMessageListViewModel()
     @State private var showingForm = false

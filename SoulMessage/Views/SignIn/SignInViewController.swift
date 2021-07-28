@@ -28,12 +28,13 @@ final class SignInViewController: UIViewController {
 
 }
 
-struct IntegratedSignInController: UIViewControllerRepresentable {
-    func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInController>) -> SignInViewController {
+struct IntegratedSignInViewController: UIViewControllerRepresentable {
+    // swiftlint:disable line_length
+    func makeUIViewController(context: UIViewControllerRepresentableContext<IntegratedSignInViewController>) -> SignInViewController {
         let controller = SignInViewController()
         return controller
     }
 
-    func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInController>) {}
+    func updateUIViewController(_ uiViewController: SignInViewController, context: UIViewControllerRepresentableContext<IntegratedSignInViewController>) {}
 
 }

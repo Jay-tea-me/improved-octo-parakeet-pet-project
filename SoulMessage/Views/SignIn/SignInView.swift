@@ -24,13 +24,13 @@ struct SignInView: View {
                             .font(.largeTitle)
                             .bold()
                     })
-                    .frame(width: width * 3 / 4, height: height, alignment: .center)
+                    .frame(width: width * 3 / 4, height: height * 3 / 4, alignment: .center)
                     .offset(x: 0, y: width / 4)
 
                     Spacer()
 
                     VStack(alignment: .center, spacing: 0, content: {
-                        IntegratedSignInController()
+                        IntegratedSignInViewController()
                             .contentShape(Rectangle())
 
                     })
