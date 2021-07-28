@@ -35,6 +35,7 @@
 		2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4B26A582010003C188 /* MockAuthenticationService.swift */; };
 		2152FB4D26A5825B0003C188 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */; };
 		2152FB4F26A583F20003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
+		21715DA226B1623C006F883B /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DA126B1623C006F883B /* CLLocationManager.swift */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
@@ -102,6 +103,7 @@
 		2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		2152FB4926A57F3C0003C188 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2152FB4B26A582010003C188 /* MockAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationService.swift; sourceTree = "<group>"; };
+		21715DA126B1623C006F883B /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
 		21760DEF26A159FB00DFB4CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		21760DF426A16CAD00DFB4CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
@@ -173,7 +175,6 @@
 				2152FB4926A57F3C0003C188 /* AppState.swift */,
 				2145630E26984717001210F5 /* Map */,
 				213DE9F926959B4400A54262 /* Authentication */,
-				21E20E35269727CB00832118 /* Publishers */,
 				213DE9EC26946E3700A54262 /* Repositories */,
 			);
 			path = Scripts;
@@ -287,6 +288,7 @@
 			children = (
 				213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */,
 				21C7C1D126A0751D0048A11F /* GoogleAuth.swift */,
+				21E20E36269727E200832118 /* AuthPublisher.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */,
+				21715DA126B1623C006F883B /* CLLocationManager.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -352,14 +355,6 @@
 				21DF46B126A1E28600F9D98C /* SignOutViewController.swift */,
 			);
 			path = SignOut;
-			sourceTree = "<group>";
-		};
-		21E20E35269727CB00832118 /* Publishers */ = {
-			isa = PBXGroup;
-			children = (
-				21E20E36269727E200832118 /* AuthPublisher.swift */,
-			);
-			path = Publishers;
 			sourceTree = "<group>";
 		};
 		21E20E422697629900832118 /* SoulMessageTests */ = {
@@ -551,6 +546,7 @@
 				21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */,
 				213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
+				21715DA226B1623C006F883B /* CLLocationManager.swift in Sources */,
 				21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */,
 				21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */,
 				213DE9F22694704100A54262 /* SignInView.swift in Sources */,
