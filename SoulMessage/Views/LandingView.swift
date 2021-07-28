@@ -16,7 +16,7 @@ struct LandingView: View {
             text: [Text("Messages"), Text("Map"), Text("Profile")],
             content: [
                 AnyView(GeoMessageListView(geoMessageListViewModel: GeoMessageListViewModel())),
-                AnyView(MapView(coordinate: CLLocationCoordinate2D(latitude: 28.076_783, longitude: -26.198_223))),
+                AnyView(MapView()),
                 AnyView(ProfileView())]
         )
     }

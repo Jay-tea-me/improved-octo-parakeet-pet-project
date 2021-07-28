@@ -10,7 +10,7 @@ import CoreLocation
 import Combine
 
 extension CLLocationManager {
-    public static func publishLocation() -> AnyPublisher<CLLocation, Never> {
+    public static func publishLocation() -> AnyPublisher<CLLocationCoordinate2D, Never> {
         Publishers.LocationPublisher().eraseToAnyPublisher()
     }
 }
@@ -18,7 +18,7 @@ extension CLLocationManager {
 extension Publishers {
 
     public struct LocationPublisher: Publisher {
-        public typealias Output = CLLocation
+        public typealias Output = CLLocationCoordinate2D
         public typealias Failure = Never
 
         public func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input {
@@ -51,4 +51,3 @@ extension Publishers {
         }
     }
 }
-

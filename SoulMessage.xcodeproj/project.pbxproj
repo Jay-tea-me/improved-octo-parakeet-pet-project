@@ -36,6 +36,7 @@
 		2152FB4D26A5825B0003C188 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9EF26946FDA00A54262 /* AuthenticationServices.swift */; };
 		2152FB4F26A583F20003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
 		21715DA226B1623C006F883B /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DA126B1623C006F883B /* CLLocationManager.swift */; };
+		21715DA426B19A5A006F883B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DA326B19A5A006F883B /* MapViewModel.swift */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
 		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
@@ -104,6 +105,7 @@
 		2152FB4926A57F3C0003C188 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2152FB4B26A582010003C188 /* MockAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationService.swift; sourceTree = "<group>"; };
 		21715DA126B1623C006F883B /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
+		21715DA326B19A5A006F883B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		21760DEF26A159FB00DFB4CF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		21760DF426A16CAD00DFB4CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		21996CA8269613C50080AEEF /* GeoMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessageRepository.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				21996CAA269615E10080AEEF /* GeoMessageListViewModel.swift */,
 				21996CAC269617EF0080AEEF /* GeoMessageViewModel.swift */,
 				219E8DA926AAADF9004D7BA7 /* FormViewModel.swift */,
+				21715DA326B19A5A006F883B /* MapViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				21996CAF26961A890080AEEF /* GeoMessageView.swift in Sources */,
 				21E20DFD26970EBE00832118 /* LandingView.swift in Sources */,
 				21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */,
+				21715DA426B19A5A006F883B /* MapViewModel.swift in Sources */,
 				219E8DAA26AAADF9004D7BA7 /* FormViewModel.swift in Sources */,
 				21996CAB269615E10080AEEF /* GeoMessageListViewModel.swift in Sources */,
 				21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */,
