@@ -59,7 +59,6 @@
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
 		21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
-		21E20E442697629900832118 /* SoulMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E432697629900832118 /* SoulMessageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +120,6 @@
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAreaCalculator.swift; sourceTree = "<group>"; };
 		21E20E412697629900832118 /* SoulMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21E20E432697629900832118 /* SoulMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulMessageTests.swift; sourceTree = "<group>"; };
 		21E20E452697629900832118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,7 +356,6 @@
 			children = (
 				2152FB4E26A583B10003C188 /* Mocks */,
 				2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */,
-				21E20E432697629900832118 /* SoulMessageTests.swift */,
 				21E20E452697629900832118 /* Info.plist */,
 			);
 			path = SoulMessageTests;
@@ -554,7 +551,6 @@
 				2152FB4826A57E8A0003C188 /* AuthenticationTests.swift in Sources */,
 				2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */,
 				2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */,
-				21E20E442697629900832118 /* SoulMessageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
