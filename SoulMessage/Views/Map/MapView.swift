@@ -11,20 +11,21 @@ import Combine
 
 struct MapView: View {
     @ObservedObject private var viewModel = ViewModel()
+    @State private var trackingMode: MapUserTrackingMode = .follow
 
     var body: some View {
         Map(
             coordinateRegion: $viewModel.region,
-            interactionModes: .all,
             showsUserLocation: true,
-            userTrackingMode: nil,
-            annotationItems: $viewModel.listGeoMessageViewModel.wrappedValue) { geomessageVM in
-            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: geomessageVM.geoMessage.latitude, longitude: geomessageVM.geoMessage.latitude)) {
-                Image(systemName: "Message")
-                    .resizable()
-                    .frame(width: 50, height: 50)
-            }
-        }
+            userTrackingMode: $trackingMode,
+            annotationItems: $viewModel.listMessageAnnotations.wrappedValue) { annotation in
+            MapAnnotation(coordinate: annotation.coordinate) {
+                            Image(systemName: "face.smiling")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+            .ignoresSafeArea(.all)
     }
 }
 

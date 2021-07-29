@@ -30,6 +30,9 @@
 		213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F52694AC9500A54262 /* GeoMessage.swift */; };
 		213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F72694AD4300A54262 /* RepositoryServices.swift */; };
 		2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
+		214C381A26B2B25F00ABBDD7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 214C381926B2B25F00ABBDD7 /* FirebaseAuth */; };
+		214C382426B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 214C382326B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta */; };
+		214C382626B2B85C00ABBDD7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 214C382526B2B85C00ABBDD7 /* FirebaseFirestore */; };
 		2152FB4826A57E8A0003C188 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */; };
 		2152FB4A26A57F3C0003C188 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4926A57F3C0003C188 /* AppState.swift */; };
 		2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB4B26A582010003C188 /* MockAuthenticationService.swift */; };
@@ -40,11 +43,6 @@
 		21715DAE26B1DBD0006F883B /* MessageAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21715DAD26B1DBD0006F883B /* MessageAnnotation.swift */; };
 		21760DF026A159FB00DFB4CF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DEF26A159FB00DFB4CF /* SignInViewController.swift */; };
 		21760DF526A16CAD00DFB4CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21760DF426A16CAD00DFB4CF /* MapView.swift */; };
-		21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF726A1761D00DFB4CF /* GoogleMapsBase */; };
-		21760DFA26A1761D00DFB4CF /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DF926A1761D00DFB4CF /* GooglePlaces */; };
-		21760DFC26A1761D00DFB4CF /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DFB26A1761D00DFB4CF /* GoogleMapsM4B */; };
-		21760DFE26A1761D00DFB4CF /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DFD26A1761D00DFB4CF /* GoogleMapsCore */; };
-		21760E0026A1761D00DFB4CF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 21760DFF26A1761D00DFB4CF /* GoogleMaps */; };
 		21996CA9269613C50080AEEF /* GeoMessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CA8269613C50080AEEF /* GeoMessageRepository.swift */; };
 		21996CAB269615E10080AEEF /* GeoMessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CAA269615E10080AEEF /* GeoMessageListViewModel.swift */; };
 		21996CAD269617EF0080AEEF /* GeoMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CAC269617EF0080AEEF /* GeoMessageViewModel.swift */; };
@@ -58,9 +56,6 @@
 		21C7C1D626A0A64D0048A11F /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C7C1D526A0A64D0048A11F /* CustomTabView.swift */; };
 		21D1C7C726A9B51D001D9BDC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 21D1C7C626A9B51D001D9BDC /* .swiftlint.yml */; };
 		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
-		21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B426A1F76B00F9D98C /* FirebaseAuth */; };
-		21DF46B726A1F76B00F9D98C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B626A1F76B00F9D98C /* FirebaseFirestore */; };
-		21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
 		21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
@@ -135,15 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21760DF826A1761D00DFB4CF /* GoogleMapsBase in Frameworks */,
-				21760DFC26A1761D00DFB4CF /* GoogleMapsM4B in Frameworks */,
+				214C382426B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				214C382626B2B85C00ABBDD7 /* FirebaseFirestore in Frameworks */,
 				21C7C1C526A03BE10048A11F /* GoogleSignIn in Frameworks */,
-				21760DFA26A1761D00DFB4CF /* GooglePlaces in Frameworks */,
-				21760E0026A1761D00DFB4CF /* GoogleMaps in Frameworks */,
-				21DF46B726A1F76B00F9D98C /* FirebaseFirestore in Frameworks */,
-				21DF46B926A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				21DF46B526A1F76B00F9D98C /* FirebaseAuth in Frameworks */,
-				21760DFE26A1761D00DFB4CF /* GoogleMapsCore in Frameworks */,
+				214C381A26B2B25F00ABBDD7 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,14 +390,9 @@
 			name = SoulMessage;
 			packageProductDependencies = (
 				21C7C1C426A03BE10048A11F /* GoogleSignIn */,
-				21760DF726A1761D00DFB4CF /* GoogleMapsBase */,
-				21760DF926A1761D00DFB4CF /* GooglePlaces */,
-				21760DFB26A1761D00DFB4CF /* GoogleMapsM4B */,
-				21760DFD26A1761D00DFB4CF /* GoogleMapsCore */,
-				21760DFF26A1761D00DFB4CF /* GoogleMaps */,
-				21DF46B426A1F76B00F9D98C /* FirebaseAuth */,
-				21DF46B626A1F76B00F9D98C /* FirebaseFirestore */,
-				21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */,
+				214C381926B2B25F00ABBDD7 /* FirebaseAuth */,
+				214C382326B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta */,
+				214C382526B2B85C00ABBDD7 /* FirebaseFirestore */,
 			);
 			productName = SoulMessage;
 			productReference = 213DE9B926946A5700A54262 /* SoulMessage.app */;
@@ -459,8 +444,7 @@
 			mainGroup = 213DE9B026946A5700A54262;
 			packageReferences = (
 				21C7C1C326A03BE00048A11F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */,
-				21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				214C381826B2B25F00ABBDD7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 213DE9BA26946A5700A54262 /* Products */;
 			projectDirPath = "";
@@ -820,12 +804,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */ = {
+		214C381826B2B25F00ABBDD7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/YAtechnologies/GoogleMaps-SP.git";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 8.4.0;
 			};
 		};
 		21C7C1C326A03BE00048A11F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
@@ -836,61 +820,28 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.3.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		21760DF726A1761D00DFB4CF /* GoogleMapsBase */ = {
+		214C381926B2B25F00ABBDD7 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
-			productName = GoogleMapsBase;
+			package = 214C381826B2B25F00ABBDD7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
-		21760DF926A1761D00DFB4CF /* GooglePlaces */ = {
+		214C382326B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
-			productName = GooglePlaces;
+			package = 214C381826B2B25F00ABBDD7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
-		21760DFB26A1761D00DFB4CF /* GoogleMapsM4B */ = {
+		214C382526B2B85C00ABBDD7 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
-			productName = GoogleMapsM4B;
-		};
-		21760DFD26A1761D00DFB4CF /* GoogleMapsCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
-			productName = GoogleMapsCore;
-		};
-		21760DFF26A1761D00DFB4CF /* GoogleMaps */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21760DF626A1761D00DFB4CF /* XCRemoteSwiftPackageReference "GoogleMaps-SP" */;
-			productName = GoogleMaps;
+			package = 214C381826B2B25F00ABBDD7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 		21C7C1C426A03BE10048A11F /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21C7C1C326A03BE00048A11F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
-		};
-		21DF46B426A1F76B00F9D98C /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		21DF46B626A1F76B00F9D98C /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		21DF46B826A1F76B00F9D98C /* FirebaseFirestoreSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21DF46B326A1F76B00F9D98C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

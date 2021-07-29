@@ -15,36 +15,35 @@ extension MapView {
         @Published var region = MKCoordinateRegion()
 
         @Published var geoMessageRepository = GeoMessageRepository()
-        @Published var listGeoMessageViewModel: [GeoMessageViewModel] = []
+        @Published var listMessageAnnotations: [MessageAnnotation] = []
 
         private var cancellables: Set<AnyCancellable> = []
 
-        private let distance = 1000
+        private let distance: Double = 1000
 
         init() {
-            print("Is Maps working")
+            region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: 0, longitude: 0),
+                latitudinalMeters: distance,
+                longitudinalMeters: distance)
+
             CLLocationManager.publishLocation()
                 .map { self.getRegion($0, distance: 50) }
                 .assign(to: &$region)
 
             geoMessageRepository.$geoMessages
-                .map { geoMessage in
-                    geoMessage.map(GeoMessageViewModel.init)
-                }
-                .assign(to: \.listGeoMessageViewModel, on: self)
-                .store(in: &cancellables)
+                      .map { geoMessage in
+                        geoMessage.map(MessageAnnotation.init)
+                      }
+                      .assign(to: \.listMessageAnnotations, on: self)
+                      .store(in: &cancellables)
         }
 
         private func getRegion(_ coordinates: CLLocationCoordinate2D, distance: Double) -> MKCoordinateRegion {
             print("getting region")
-            let areaCalculator = MessageAreaCalculator.init(
-                distance: distance, latitude: coordinates.latitude, longitude: coordinates.longitude)
 
             return MKCoordinateRegion(
-                center: coordinates,
-                span: MKCoordinateSpan(
-                    latitudeDelta: areaCalculator.latitudeDelta,
-                    longitudeDelta: areaCalculator.longitudeDelta)
+                center: coordinates, latitudinalMeters: distance, longitudinalMeters: distance
             )
         }
 

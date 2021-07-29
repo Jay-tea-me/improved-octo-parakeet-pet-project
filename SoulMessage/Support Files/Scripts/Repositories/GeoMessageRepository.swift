@@ -5,19 +5,22 @@
 //  Created by Justine Wright on 2021/07/07.
 //
 
-import Foundation
-import FirebaseFirestore
+
 import FirebaseFirestoreSwift
+//import Firebase
+import FirebaseFirestore
 import Combine
+import Foundation
 
 final class GeoMessageRepository: ObservableObject, RepositoryServices {
 
     private let path = "geoMessages"
-    
-    private let store = Firestore.firestore()
+    private let store: Firestore!
+//    private let store = Firestore.firestore()
     @Published var geoMessages: [GeoMessage] = []
     
     init() {
+        store = Firestore.firestore()
         get()
     }
     
