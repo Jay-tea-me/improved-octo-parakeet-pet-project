@@ -39,7 +39,6 @@ class FormViewController: UIViewController {
 
         outputLabel = loadDetailLabel(with: viewModel.outputMessage)
 
-
         loadStackView()
 
         stackView.addArrangedSubview(phrase1Label)

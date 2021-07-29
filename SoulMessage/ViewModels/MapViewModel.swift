@@ -16,6 +16,7 @@ extension MapView {
 
         @Published var geoMessageRepository = GeoMessageRepository()
         @Published var listMessageAnnotations: [MessageAnnotation] = []
+        @Published var mapLocationManager = MapLocationManager(locationMode: .map)
 
         private var cancellables: Set<AnyCancellable> = []
 

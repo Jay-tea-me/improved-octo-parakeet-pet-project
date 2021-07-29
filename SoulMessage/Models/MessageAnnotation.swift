@@ -19,9 +19,8 @@ struct MessageAnnotation: Identifiable {
     }
 
     init(geoMessage: GeoMessage) {
-        
+
         self.latitude = geoMessage.latitude
         self.longitude = geoMessage.longitude
-//        & = access property of geomessage
     }
 }

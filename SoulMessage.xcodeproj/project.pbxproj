@@ -29,7 +29,7 @@
 		213DE9F42694709D00A54262 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F32694709D00A54262 /* ProfileView.swift */; };
 		213DE9F62694AC9500A54262 /* GeoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F52694AC9500A54262 /* GeoMessage.swift */; };
 		213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE9F72694AD4300A54262 /* RepositoryServices.swift */; };
-		2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
+		21481FAF26B2DD2700185C50 /* MapLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21481FAE26B2DD2700185C50 /* MapLocationManager.swift */; };
 		214C381A26B2B25F00ABBDD7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 214C381926B2B25F00ABBDD7 /* FirebaseAuth */; };
 		214C382426B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 214C382326B2B83000ABBDD7 /* FirebaseFirestoreSwift-Beta */; };
 		214C382626B2B85C00ABBDD7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 214C382526B2B85C00ABBDD7 /* FirebaseFirestore */; };
@@ -58,7 +58,6 @@
 		21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF46B126A1E28600F9D98C /* SignOutViewController.swift */; };
 		21E20DFD26970EBE00832118 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20DFC26970EBE00832118 /* LandingView.swift */; };
 		21E20E37269727E200832118 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E36269727E200832118 /* AuthPublisher.swift */; };
-		21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +95,7 @@
 		213DE9F32694709D00A54262 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		213DE9F52694AC9500A54262 /* GeoMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoMessage.swift; sourceTree = "<group>"; };
 		213DE9F72694AD4300A54262 /* RepositoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServices.swift; sourceTree = "<group>"; };
+		21481FAE26B2DD2700185C50 /* MapLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationManager.swift; sourceTree = "<group>"; };
 		2152FB4726A57E8A0003C188 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		2152FB4926A57F3C0003C188 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2152FB4B26A582010003C188 /* MockAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticationService.swift; sourceTree = "<group>"; };
@@ -118,7 +118,6 @@
 		21DF46B126A1E28600F9D98C /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 		21E20DFC26970EBE00832118 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		21E20E36269727E200832118 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
-		21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAreaCalculator.swift; sourceTree = "<group>"; };
 		21E20E412697629900832118 /* SoulMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E20E452697629900832118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,8 +300,8 @@
 		2145630E26984717001210F5 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				21E20E3B2697605B00832118 /* MessageAreaCalculator.swift */,
 				21715DA126B1623C006F883B /* CLLocationManager.swift */,
+				21481FAE26B2DD2700185C50 /* MapLocationManager.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -536,9 +535,9 @@
 				213DE9F82694AD4300A54262 /* RepositoryServices.swift in Sources */,
 				213DE9BD26946A5700A54262 /* SoulMessageApp.swift in Sources */,
 				21715DA226B1623C006F883B /* CLLocationManager.swift in Sources */,
-				21E20E3C2697605B00832118 /* MessageAreaCalculator.swift in Sources */,
 				21DF46B226A1E28600F9D98C /* SignOutViewController.swift in Sources */,
 				213DE9F22694704100A54262 /* SignInView.swift in Sources */,
+				21481FAF26B2DD2700185C50 /* MapLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +549,6 @@
 				2152FB4D26A5825B0003C188 /* AuthenticationServices.swift in Sources */,
 				2152FB4826A57E8A0003C188 /* AuthenticationTests.swift in Sources */,
 				2152FB4C26A582010003C188 /* MockAuthenticationService.swift in Sources */,
-				2145630C2698301E001210F5 /* MessageAreaCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
