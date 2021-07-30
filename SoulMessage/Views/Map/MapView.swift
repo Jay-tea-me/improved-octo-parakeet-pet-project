@@ -15,7 +15,7 @@ struct MapView: View {
 
     var body: some View {
         Map(
-            coordinateRegion: $viewModel.region,
+            coordinateRegion: $viewModel.mapLocationManager.region,
             showsUserLocation: true,
             userTrackingMode: $trackingMode,
             annotationItems: $viewModel.listMessageAnnotations.wrappedValue) { annotation in
