@@ -23,7 +23,6 @@ final class GeoMessageRepository: ObservableObject, RepositoryServices {
     init() {
         print("init geo repo")
         store = Firestore.firestore()
-        get()
         bindRegionUpdate()
 
     }
@@ -37,9 +36,13 @@ final class GeoMessageRepository: ObservableObject, RepositoryServices {
     
     func get() {
         if !mapLocationManager.initialised {return}
-        store.collection(path)
+        let dbRef = store.collection(path)
+        dbRef
             .whereField("latitude", isGreaterThan: mapLocationManager.lowerBoundsLatitude)
             .whereField("latitude", isLessThan: mapLocationManager.upperBoundsLatitude)
+        dbRef
+            .whereField("longitude", isGreaterThan: mapLocationManager.lowerBoundsLongitude)
+            .whereField("longitude", isLessThan: mapLocationManager.upperBoundsLongitude)
             .addSnapshotListener { (snapshot, error) in
             if let error = error {
                 print(error)
