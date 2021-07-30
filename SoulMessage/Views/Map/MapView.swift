@@ -7,29 +7,30 @@
 
 import SwiftUI
 import MapKit
+import Combine
 
 struct MapView: View {
-    var coordinate: CLLocationCoordinate2D
-    @State private var region = MKCoordinateRegion()
+    @ObservedObject private var viewModel = ViewModel()
+    @State private var trackingMode: MapUserTrackingMode = .follow
 
     var body: some View {
-        Map(coordinateRegion: $region)
-            .onAppear {
-                setRegion(coordinate)
-            }.ignoresSafeArea(edges: .all)
-
-    }
-
-    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-        region = MKCoordinateRegion(
-            center: coordinate,
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-        )
+        Map(
+            coordinateRegion: $viewModel.mapLocationManager.region,
+            showsUserLocation: true,
+            userTrackingMode: $trackingMode,
+            annotationItems: $viewModel.listMessageAnnotations.wrappedValue) { annotation in
+            MapAnnotation(coordinate: annotation.coordinate) {
+                            Image(systemName: "face.smiling")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+            .ignoresSafeArea(.all)
     }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: CLLocationCoordinate2D(latitude: -26.198_223, longitude: 28.076_783))
+        MapView()
     }
 }

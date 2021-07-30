@@ -21,6 +21,8 @@ final class GeoMessageListViewModel: ObservableObject {
             }
             .assign(to: \.listGeoMessageViewModel, on: self)
             .store(in: &cancellables)
+
+        MapLocationManager.setMode(mode: .ar)
     }
 
     func add(_ geoMessage: GeoMessage) {

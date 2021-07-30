@@ -13,11 +13,10 @@ class FormViewController: UIViewController {
     private var phrase1Picker: UIPickerView!
     private var phrase2Picker: UIPickerView!
 
-    private var locationLabel: UILabel!
     private var outputLabel: UILabel!
     private var phrase1Label: UILabel!
     private var phrase2Label: UILabel!
-//    private var carveButton: UIButton!
+
     private var stackView: UIStackView!
     private(set) var viewModel: ViewModel
 
@@ -39,7 +38,6 @@ class FormViewController: UIViewController {
         phrase2Label = loadPickerLabel(text: viewModel.phrase2LabelText)
 
         outputLabel = loadDetailLabel(with: viewModel.outputMessage)
-        locationLabel = loadDetailLabel(with: viewModel.coordinates)
 
         loadStackView()
 
@@ -48,7 +46,7 @@ class FormViewController: UIViewController {
         stackView.addArrangedSubview(phrase2Label)
         stackView.addArrangedSubview(phrase2Picker)
         stackView.addArrangedSubview(outputLabel)
-        stackView.addArrangedSubview(locationLabel)
+
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         self.view.addSubview(stackView)
