@@ -17,6 +17,7 @@ Soul message is an iOS application. It is developed for people who want to find 
 * Firebase Google Auth
 * Firebase Firestore
 * Mapkit
+* CoreLocation
 
 <!-- ROADMAP -->
 ## Roadmap
