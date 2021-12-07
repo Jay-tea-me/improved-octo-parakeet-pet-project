@@ -36,7 +36,7 @@ extension Publishers {
                 self.subscriber = subscriber
 
                 locationManager.desiredAccuracy = kCLLocationAccuracyBest
-                locationManager.distanceFilter = kCLDistanceFilterNone
+                locationManager.distanceFilter = 10
                 locationManager.delegate = self
             }
 
@@ -51,7 +51,8 @@ extension Publishers {
 
             func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
                 for location in locations {
-                    _ = subscriber?.receive(location.coordinate)
+                    _ = subscriber?
+                        .receive(location.coordinate)
                 }
             }
         }

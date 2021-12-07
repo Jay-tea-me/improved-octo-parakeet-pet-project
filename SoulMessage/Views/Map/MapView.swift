@@ -9,6 +9,16 @@ import SwiftUI
 import MapKit
 import Combine
 
+struct PlaceAnnotationView: View {
+  var body: some View {
+    VStack(spacing: 0) {
+      Image(systemName: "message")
+        .font(.title)
+        .foregroundColor(.red)
+    }
+  }
+}
+
 struct MapView: View {
     @ObservedObject private var viewModel = ViewModel()
     @State private var trackingMode: MapUserTrackingMode = .follow
@@ -18,11 +28,9 @@ struct MapView: View {
             coordinateRegion: $viewModel.mapLocationManager.region,
             showsUserLocation: true,
             userTrackingMode: $trackingMode,
-            annotationItems: $viewModel.listMessageAnnotations.wrappedValue) { annotation in
-            MapAnnotation(coordinate: annotation.coordinate) {
-                            Image(systemName: "face.smiling")
-                                .resizable()
-                                .frame(width: 50, height: 50)
+            annotationItems: $viewModel.listMessageAnnotations.wrappedValue) { place in
+            MapAnnotation(coordinate: place.coordinate) {
+                          PlaceAnnotationView()
                         }
                     }
             .ignoresSafeArea(.all)
