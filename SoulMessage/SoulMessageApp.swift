@@ -33,8 +33,10 @@ struct SoulMessageApp: App {
         WindowGroup {
             if appState.isSignedIn {
                 LandingView()
+                    .preferredColorScheme(.dark)
             } else {
                 SignInView()
+                    .preferredColorScheme(.dark)
             }
         }
     }

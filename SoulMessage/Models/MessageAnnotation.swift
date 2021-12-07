@@ -23,4 +23,5 @@ struct MessageAnnotation: Identifiable {
         self.latitude = geoMessage.latitude
         self.longitude = geoMessage.longitude
     }
+
 }
